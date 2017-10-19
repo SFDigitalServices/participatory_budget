@@ -1,0 +1,22 @@
+bootstrap:
+  remote: http://getbootstrap.com/
+  license:
+    name: MIT
+    gpl-compatible: false
+  js:
+    vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js: { minified: true }
+  css:
+    theme:
+      vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css: { minified: true }
+  dependencies:
+    - core/jquery
+font-awesome:
+  remote: http://fontawesome.io/
+  license:
+    name: SIL OFL 1.1
+    gpl-compatible: true
+  css:
+    theme:
+      font-awesome-4.7.0/css/font-awesome.min.css: { minified: true }
+  dependencies:
+    - core/jquery
