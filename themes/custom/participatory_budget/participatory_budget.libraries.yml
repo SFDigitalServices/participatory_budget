@@ -1,3 +1,11 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/base.css: {}
+    component:
+      css/components/header.css: {}
+      css/components/footer.css: {}
 bootstrap:
   remote: http://getbootstrap.com/
   license:
