@@ -1,0 +1,6 @@
+name: CCSF Participatory Budget
+description: Custom Drupal logic for the Participatory Budget service
+package: Custom
+
+type: module
+core: 8.x
