@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+  httpd:
+    build: .
+    links:
+      - maria_db:db
+    ports:
+      - 8080:80
+    volumes:
+      - .:/var/www/html:rw
+  maria_db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3306:3306
+    expose:
+      - "3306"
+    volumes:
+    - ./database:/var/lib/mysql:rw
