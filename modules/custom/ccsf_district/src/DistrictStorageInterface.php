@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget;
+namespace Drupal\ccsf_district;
 
 use Drupal\Core\Entity\ContentEntityStorageInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Language\LanguageInterface;
-use Drupal\ccsf_participatory_budget\Entity\DistrictInterface;
+use Drupal\ccsf_district\Entity\DistrictInterface;
 
 /**
  * Defines the storage handler class for District entities.
@@ -13,14 +13,14 @@ use Drupal\ccsf_participatory_budget\Entity\DistrictInterface;
  * This extends the base storage class, adding required special handling for
  * District entities.
  *
- * @ingroup ccsf_participatory_budget
+ * @ingroup ccsf_district
  */
 interface DistrictStorageInterface extends ContentEntityStorageInterface {
 
   /**
    * Gets a list of District revision IDs for a specific District.
    *
-   * @param \Drupal\ccsf_participatory_budget\Entity\DistrictInterface $entity
+   * @param \Drupal\ccsf_district\Entity\DistrictInterface $entity
    *   The District entity.
    *
    * @return int[]
@@ -42,7 +42,7 @@ interface DistrictStorageInterface extends ContentEntityStorageInterface {
   /**
    * Counts the number of revisions in the default language.
    *
-   * @param \Drupal\ccsf_participatory_budget\Entity\DistrictInterface $entity
+   * @param \Drupal\ccsf_district\Entity\DistrictInterface $entity
    *   The District entity.
    *
    * @return int

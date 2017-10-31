@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget\Form;
+namespace Drupal\ccsf_district\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Class DistrictSettingsForm.
  *
- * @ingroup ccsf_participatory_budget
+ * @ingroup ccsf_district
  */
 class DistrictSettingsForm extends FormBase {
 

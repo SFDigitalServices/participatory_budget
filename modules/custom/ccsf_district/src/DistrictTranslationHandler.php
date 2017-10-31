@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget;
+namespace Drupal\ccsf_district;
 
 use Drupal\content_translation\ContentTranslationHandler;
 

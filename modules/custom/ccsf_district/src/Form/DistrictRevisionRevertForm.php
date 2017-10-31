@@ -1,19 +1,19 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget\Form;
+namespace Drupal\ccsf_district\Form;
 
 use Drupal\Core\Datetime\DateFormatterInterface;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Form\ConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
-use Drupal\ccsf_participatory_budget\Entity\DistrictInterface;
+use Drupal\ccsf_district\Entity\DistrictInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a form for reverting a District revision.
  *
- * @ingroup ccsf_participatory_budget
+ * @ingroup ccsf_district
  */
 class DistrictRevisionRevertForm extends ConfirmFormBase {
 
@@ -21,7 +21,7 @@ class DistrictRevisionRevertForm extends ConfirmFormBase {
   /**
    * The District revision.
    *
-   * @var \Drupal\ccsf_participatory_budget\Entity\DistrictInterface
+   * @var \Drupal\ccsf_district\Entity\DistrictInterface
    */
   protected $revision;
 
@@ -130,12 +130,12 @@ class DistrictRevisionRevertForm extends ConfirmFormBase {
   /**
    * Prepares a revision to be reverted.
    *
-   * @param \Drupal\ccsf_participatory_budget\Entity\DistrictInterface $revision
+   * @param \Drupal\ccsf_district\Entity\DistrictInterface $revision
    *   The revision to be reverted.
    * @param \Drupal\Core\Form\FormStateInterface $form_state
    *   The current state of the form.
    *
-   * @return \Drupal\ccsf_participatory_budget\Entity\DistrictInterface
+   * @return \Drupal\ccsf_district\Entity\DistrictInterface
    *   The prepared revision ready to be stored.
    */
   protected function prepareRevertedRevision(DistrictInterface $revision, FormStateInterface $form_state) {

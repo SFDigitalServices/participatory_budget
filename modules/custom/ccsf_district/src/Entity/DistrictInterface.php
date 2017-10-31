@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget\Entity;
+namespace Drupal\ccsf_district\Entity;
 
 use Drupal\Core\Entity\RevisionLogInterface;
 use Drupal\Core\Entity\RevisionableInterface;
@@ -10,7 +10,7 @@ use Drupal\user\EntityOwnerInterface;
 /**
  * Provides an interface for defining District entities.
  *
- * @ingroup ccsf_participatory_budget
+ * @ingroup ccsf_district
  */
 interface DistrictInterface extends RevisionableInterface, RevisionLogInterface, EntityChangedInterface, EntityOwnerInterface {
 
@@ -30,7 +30,7 @@ interface DistrictInterface extends RevisionableInterface, RevisionLogInterface,
    * @param string $name
    *   The District name.
    *
-   * @return \Drupal\ccsf_participatory_budget\Entity\DistrictInterface
+   * @return \Drupal\ccsf_district\Entity\DistrictInterface
    *   The called District entity.
    */
   public function setName($name);
@@ -49,7 +49,7 @@ interface DistrictInterface extends RevisionableInterface, RevisionLogInterface,
    * @param int $timestamp
    *   The District creation timestamp.
    *
-   * @return \Drupal\ccsf_participatory_budget\Entity\DistrictInterface
+   * @return \Drupal\ccsf_district\Entity\DistrictInterface
    *   The called District entity.
    */
   public function setCreatedTime($timestamp);
@@ -70,7 +70,7 @@ interface DistrictInterface extends RevisionableInterface, RevisionLogInterface,
    * @param bool $published
    *   TRUE to set this District to published, FALSE to set it to unpublished.
    *
-   * @return \Drupal\ccsf_participatory_budget\Entity\DistrictInterface
+   * @return \Drupal\ccsf_district\Entity\DistrictInterface
    *   The called District entity.
    */
   public function setPublished($published);
@@ -89,7 +89,7 @@ interface DistrictInterface extends RevisionableInterface, RevisionLogInterface,
    * @param int $timestamp
    *   The UNIX timestamp of when this revision was created.
    *
-   * @return \Drupal\ccsf_participatory_budget\Entity\DistrictInterface
+   * @return \Drupal\ccsf_district\Entity\DistrictInterface
    *   The called District entity.
    */
   public function setRevisionCreationTime($timestamp);
@@ -108,7 +108,7 @@ interface DistrictInterface extends RevisionableInterface, RevisionLogInterface,
    * @param int $uid
    *   The user ID of the revision author.
    *
-   * @return \Drupal\ccsf_participatory_budget\Entity\DistrictInterface
+   * @return \Drupal\ccsf_district\Entity\DistrictInterface
    *   The called District entity.
    */
   public function setRevisionUserId($uid);

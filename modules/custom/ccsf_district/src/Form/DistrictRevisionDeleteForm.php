@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget\Form;
+namespace Drupal\ccsf_district\Form;
 
 use Drupal\Core\Database\Connection;
 use Drupal\Core\Entity\EntityStorageInterface;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * Provides a form for deleting a District revision.
  *
- * @ingroup ccsf_participatory_budget
+ * @ingroup ccsf_district
  */
 class DistrictRevisionDeleteForm extends ConfirmFormBase {
 
@@ -20,7 +20,7 @@ class DistrictRevisionDeleteForm extends ConfirmFormBase {
   /**
    * The District revision.
    *
-   * @var \Drupal\ccsf_participatory_budget\Entity\DistrictInterface
+   * @var \Drupal\ccsf_district\Entity\DistrictInterface
    */
   protected $revision;
 

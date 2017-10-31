@@ -1,12 +1,12 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget\Controller;
+namespace Drupal\ccsf_district\Controller;
 
 use Drupal\Component\Utility\Xss;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Url;
-use Drupal\ccsf_participatory_budget\Entity\DistrictInterface;
+use Drupal\ccsf_district\Entity\DistrictInterface;
 
 /**
  * Class DistrictController.
@@ -48,7 +48,7 @@ class DistrictController extends ControllerBase implements ContainerInjectionInt
   /**
    * Generates an overview table of older revisions of a District .
    *
-   * @param \Drupal\ccsf_participatory_budget\Entity\DistrictInterface $district
+   * @param \Drupal\ccsf_district\Entity\DistrictInterface $district
    *   A District  object.
    *
    * @return array
@@ -75,7 +75,7 @@ class DistrictController extends ControllerBase implements ContainerInjectionInt
     $latest_revision = TRUE;
 
     foreach (array_reverse($vids) as $vid) {
-      /** @var \Drupal\ccsf_participatory_budget\DistrictInterface $revision */
+      /** @var \Drupal\ccsf_district\DistrictInterface $revision */
       $revision = $district_storage->loadRevision($vid);
       // Only show revisions that are affected by the language that is being
       // displayed.

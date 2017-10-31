@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.district.field_district_number
+  module:
+    - ccsf_district
+id: district.district.field_district_number
+field_name: field_district_number
+entity_type: district
+bundle: district
+label: 'District Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,10 @@
+name: CCSF District
+description: Creates district entity
+package: Custom
+
+dependencies:
+  - drupal:telephone
+  - drupal:text
+
+type: module
+core: 8.x

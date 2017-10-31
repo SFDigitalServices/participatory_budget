@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget\Form;
+namespace Drupal\ccsf_district\Form;
 
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Form controller for District edit forms.
  *
- * @ingroup ccsf_participatory_budget
+ * @ingroup ccsf_district
  */
 class DistrictForm extends ContentEntityForm {
 
@@ -16,7 +16,7 @@ class DistrictForm extends ContentEntityForm {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    /* @var $entity \Drupal\ccsf_participatory_budget\Entity\District */
+    /* @var $entity \Drupal\ccsf_district\Entity\District */
     $form = parent::buildForm($form, $form_state);
 
     if (!$this->entity->isNew()) {

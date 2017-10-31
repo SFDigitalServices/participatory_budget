@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget;
+namespace Drupal\ccsf_district;
 
 use Drupal\Core\Entity\EntityAccessControlHandler;
 use Drupal\Core\Entity\EntityInterface;
@@ -10,7 +10,7 @@ use Drupal\Core\Access\AccessResult;
 /**
  * Access controller for the District entity.
  *
- * @see \Drupal\ccsf_participatory_budget\Entity\District.
+ * @see \Drupal\ccsf_district\Entity\District.
  */
 class DistrictAccessControlHandler extends EntityAccessControlHandler {
 
@@ -18,7 +18,7 @@ class DistrictAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkAccess(EntityInterface $entity, $operation, AccountInterface $account) {
-    /** @var \Drupal\ccsf_participatory_budget\Entity\DistrictInterface $entity */
+    /** @var \Drupal\ccsf_district\Entity\DistrictInterface $entity */
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {

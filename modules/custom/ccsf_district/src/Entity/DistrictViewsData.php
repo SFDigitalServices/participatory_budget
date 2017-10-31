@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget\Entity;
+namespace Drupal\ccsf_district\Entity;
 
 use Drupal\views\EntityViewsData;
 

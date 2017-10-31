@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.district.field_contact_email
+  module:
+    - ccsf_district
+id: district.district.field_contact_email
+field_name: field_contact_email
+entity_type: district
+bundle: district
+label: 'Contact Email'
+description: 'Email address of primary contact for participatory budgeting.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

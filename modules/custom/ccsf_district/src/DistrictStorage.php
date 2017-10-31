@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget;
+namespace Drupal\ccsf_district;
 
 use Drupal\Core\Entity\Sql\SqlContentEntityStorage;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Language\LanguageInterface;
-use Drupal\ccsf_participatory_budget\Entity\DistrictInterface;
+use Drupal\ccsf_district\Entity\DistrictInterface;
 
 /**
  * Defines the storage handler class for District entities.
@@ -13,7 +13,7 @@ use Drupal\ccsf_participatory_budget\Entity\DistrictInterface;
  * This extends the base storage class, adding required special handling for
  * District entities.
  *
- * @ingroup ccsf_participatory_budget
+ * @ingroup ccsf_district
  */
 class DistrictStorage extends SqlContentEntityStorage implements DistrictStorageInterface {
 

@@ -1,18 +1,18 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget\Form;
+namespace Drupal\ccsf_district\Form;
 
 use Drupal\Core\Datetime\DateFormatterInterface;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Language\LanguageManagerInterface;
-use Drupal\ccsf_participatory_budget\Entity\DistrictInterface;
+use Drupal\ccsf_district\Entity\DistrictInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a form for reverting a District revision for a single translation.
  *
- * @ingroup ccsf_participatory_budget
+ * @ingroup ccsf_district
  */
 class DistrictRevisionRevertTranslationForm extends DistrictRevisionRevertForm {
 
@@ -93,7 +93,7 @@ class DistrictRevisionRevertTranslationForm extends DistrictRevisionRevertForm {
   protected function prepareRevertedRevision(DistrictInterface $revision, FormStateInterface $form_state) {
     $revert_untranslated_fields = $form_state->getValue('revert_untranslated_fields');
 
-    /** @var \Drupal\ccsf_participatory_budget\Entity\DistrictInterface $default_revision */
+    /** @var \Drupal\ccsf_district\Entity\DistrictInterface $default_revision */
     $latest_revision = $this->DistrictStorage->load($revision->id());
     $latest_revision_translation = $latest_revision->getTranslation($this->langcode);
 

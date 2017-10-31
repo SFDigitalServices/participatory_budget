@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ccsf_participatory_budget\Entity;
+namespace Drupal\ccsf_district\Entity;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
@@ -12,27 +12,27 @@ use Drupal\user\UserInterface;
 /**
  * Defines the District entity.
  *
- * @ingroup ccsf_participatory_budget
+ * @ingroup ccsf_district
  *
  * @ContentEntityType(
  *   id = "district",
  *   label = @Translation("District"),
  *   handlers = {
- *     "storage" = "Drupal\ccsf_participatory_budget\DistrictStorage",
+ *     "storage" = "Drupal\ccsf_district\DistrictStorage",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\ccsf_participatory_budget\DistrictListBuilder",
- *     "views_data" = "Drupal\ccsf_participatory_budget\Entity\DistrictViewsData",
- *     "translation" = "Drupal\ccsf_participatory_budget\DistrictTranslationHandler",
+ *     "list_builder" = "Drupal\ccsf_district\DistrictListBuilder",
+ *     "views_data" = "Drupal\ccsf_district\Entity\DistrictViewsData",
+ *     "translation" = "Drupal\ccsf_district\DistrictTranslationHandler",
  *
  *     "form" = {
- *       "default" = "Drupal\ccsf_participatory_budget\Form\DistrictForm",
- *       "add" = "Drupal\ccsf_participatory_budget\Form\DistrictForm",
- *       "edit" = "Drupal\ccsf_participatory_budget\Form\DistrictForm",
- *       "delete" = "Drupal\ccsf_participatory_budget\Form\DistrictDeleteForm",
+ *       "default" = "Drupal\ccsf_district\Form\DistrictForm",
+ *       "add" = "Drupal\ccsf_district\Form\DistrictForm",
+ *       "edit" = "Drupal\ccsf_district\Form\DistrictForm",
+ *       "delete" = "Drupal\ccsf_district\Form\DistrictDeleteForm",
  *     },
- *     "access" = "Drupal\ccsf_participatory_budget\DistrictAccessControlHandler",
+ *     "access" = "Drupal\ccsf_district\DistrictAccessControlHandler",
  *     "route_provider" = {
- *       "html" = "Drupal\ccsf_participatory_budget\DistrictHtmlRouteProvider",
+ *       "html" = "Drupal\ccsf_district\DistrictHtmlRouteProvider",
  *     },
  *   },
  *   base_table = "district",
