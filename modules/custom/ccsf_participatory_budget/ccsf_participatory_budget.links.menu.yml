@@ -1,0 +1,14 @@
+
+# District menu items definition
+entity.district.collection:
+  title: 'District list'
+  route_name: entity.district.collection
+  description: 'List District entities'
+  parent: system.admin_structure
+  weight: 100
+
+district.admin.structure.settings:
+  title: District settings
+  description: 'Configure District entities'
+  route_name: district.settings
+  parent: system.admin_structure

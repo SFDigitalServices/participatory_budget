@@ -1,0 +1,33 @@
+add district entities:
+  title: 'Create new District entities'
+
+administer district entities:
+  title: 'Administer District entities'
+  description: 'Allow to access the administration form to configure District entities.'
+  restrict access: true
+
+delete district entities:
+  title: 'Delete District entities'
+
+edit district entities:
+  title: 'Edit District entities'
+
+access district overview:
+  title: 'Access the District overview page'
+
+view published district entities:
+  title: 'View published District entities'
+
+view unpublished district entities:
+  title: 'View unpublished District entities'
+
+view all district revisions:
+  title: 'View all District revisions'
+
+revert all district revisions:
+  title: 'Revert all District revisions'
+  description: 'Role requires permission <em>view District revisions</em> and <em>edit rights</em> for district entities in question or <em>administer district entities</em>.'
+
+delete all district revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view District revisions</em> and <em>delete rights</em> for district entities in question or <em>administer district entities</em>.'

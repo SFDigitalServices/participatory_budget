@@ -1,0 +1,27 @@
+# District routing definition
+district.settings_tab:
+  route_name: district.settings
+  title: 'Settings'
+  base_route: district.settings
+
+entity.district.canonical:
+  route_name: entity.district.canonical
+  base_route: entity.district.canonical
+  title: 'View'
+
+entity.district.edit_form:
+  route_name: entity.district.edit_form
+  base_route: entity.district.canonical
+  title: 'Edit'
+
+entity.district.version_history:
+  route_name: entity.district.version_history
+  base_route: entity.district.canonical
+  title: 'Revisions'
+
+entity.district.delete_form:
+  route_name:  entity.district.delete_form
+  base_route:  entity.district.canonical
+  title: Delete
+  weight: 10
+

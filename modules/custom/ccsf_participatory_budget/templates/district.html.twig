@@ -1,0 +1,22 @@
+{#
+/**
+ * @file district.html.twig
+ * Default theme implementation to present District data.
+ *
+ * This template is used when viewing District pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_district()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('district') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

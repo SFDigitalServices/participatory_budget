@@ -1,0 +1,5 @@
+entity.district.add_form:
+  route_name: entity.district.add_form
+  title: 'Add District'
+  appears_on:
+    - entity.district.collection
