@@ -6,8 +6,10 @@ dependencies:
     - field.field.district.district.field_contact_name
     - field.field.district.district.field_contact_phone
     - field.field.district.district.field_district_number
+    - field.field.district.district.field_external_district_page
   module:
     - ccsf_district
+    - link
     - telephone
 id: district.district.default
 targetEntityType: district
@@ -43,6 +45,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_external_district_page:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   user_id:
     type: entity_reference_autocomplete

@@ -6,8 +6,10 @@ dependencies:
     - field.field.district.district.field_contact_name
     - field.field.district.district.field_contact_phone
     - field.field.district.district.field_district_number
+    - field.field.district.district.field_external_district_page
   module:
     - ccsf_district
+    - link
     - telephone
     - user
 id: district.district.default
@@ -46,6 +48,18 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
+  field_external_district_page:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   user_id:
     label: hidden
