@@ -3,7 +3,11 @@ status: true
 dependencies:
   module:
     - ccsf_district
+    - ccsf_participatory_budget
     - node
+  enforced:
+    module:
+      - ccsf_participatory_budget
 id: node.field_district
 field_name: field_district
 entity_type: node

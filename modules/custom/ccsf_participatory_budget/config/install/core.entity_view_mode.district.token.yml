@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - ccsf_district
-id: district.token
-label: Token
-targetEntityType: district
-cache: true

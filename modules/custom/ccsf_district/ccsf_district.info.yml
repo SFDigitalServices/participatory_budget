@@ -3,6 +3,7 @@ description: Creates district entity
 package: Custom
 
 dependencies:
+  - drupal:link
   - drupal:telephone
   - drupal:text
 

@@ -3,6 +3,9 @@ status: true
 dependencies:
   module:
     - menu_ui
+  enforced:
+    module:
+      - ccsf_participatory_budget
 third_party_settings:
   menu_ui:
     available_menus:

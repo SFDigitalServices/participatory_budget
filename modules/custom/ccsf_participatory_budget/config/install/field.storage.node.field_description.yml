@@ -2,8 +2,12 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ccsf_participatory_budget
     - node
     - text
+  enforced:
+    module:
+      - ccsf_participatory_budget
 id: node.field_description
 field_name: field_description
 entity_type: node
