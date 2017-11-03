@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="about">
+    {{ content.field_description }}
+  </div>
+  <div class="col-sm-6">
+    <h3>{{ 'This Year'|t }}</h3>
+		{{ content.field_this_year }}
+
+    <div class="pbmovie">
+      <iframe src="https://player.vimeo.com/video/107121298" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <p class="credit">
+        {{ 'Video courtesy'|t }} of <a href="http://www.participatorybudgeting.org">{{ 'Participatory Budgeting Project (PBP)'|t }}</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <h3>Last Year</h3>
+		{{ content.field_last_year }}
+  </div>
+</div>

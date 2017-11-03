@@ -1,0 +1,44 @@
+main {
+ line-height: 1.6;
+}
+
+main h1, main h2, main h3, main h4, main h5 {
+  color: #82B440;
+}
+
+main ul {
+  padding-left: 15px;
+  line-height: 2;
+}
+
+main a, a:hover {
+  color: #82B440;
+  background: transparent;
+}
+
+main .about {
+  font-size: larger;
+  padding: 20px 0 40px;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #82B440;
+  text-align: center;
+}
+
+main span.translation {
+  font-size: smaller;
+  display: block;
+  padding: 10px 0 5px
+}
+
+main .pbmovie {
+  height: 230px;
+}
+
+main .pbmovie iframe {
+  border: 1px solid #82B440
+}
+
+main .pbmovie p.credit {
+  display: block;
+  font-size: smaller;
+}
