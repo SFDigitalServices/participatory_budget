@@ -44,7 +44,7 @@ settings:
             - Source
   plugins:
     stylescombo:
-      styles: p.translation|Translation
+      styles: span.translation|Translation
     language:
       language_list: un
 image_upload:
