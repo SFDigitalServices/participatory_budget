@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_this_year
+    - node.type.district_landing_page
+  module:
+    - text
+id: node.district_landing_page.field_this_year
+field_name: field_this_year
+entity_type: node
+bundle: district_landing_page
+label: 'This Year'
+description: 'Description of participatory budgeting process for this year.'
+required: true
+translatable: false
+default_value:
+  -
+    value: "<p>This year, 2018, District &lt;insert number&gt; is participating and is holding public forums for residents to hear about the process, talk with District staff, and to offer project ideas.</p>\r\n\r\n<p class=\"translation\"><span class=\"translation\">En este año, 2017, El distrito &lt;insert number&gt; participando organizado forums públicos para que los residentes sean informados sobre el proceso, tengan la oportunidad de hablar con el Supervisor y anadir ideas de proyectos.</span></p>\r\n"
+    format: rich_text
+default_value_callback: ''
+settings: {  }
+field_type: text_long

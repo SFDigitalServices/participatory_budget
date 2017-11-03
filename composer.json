@@ -7,7 +7,9 @@
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
         "drush/drush": "^8.1",
-        "drupal/console": "~1.0"
+        "drupal/console": "~1.0",
+        "drupal/auto_entitylabel": "^2.0@beta",
+        "drupal/token": "^1.0"
     },
     "replace": {
         "drupal/core": "^8.4"

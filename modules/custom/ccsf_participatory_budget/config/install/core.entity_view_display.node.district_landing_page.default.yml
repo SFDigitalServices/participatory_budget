@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.district_landing_page.field_description
+    - field.field.node.district_landing_page.field_district
+    - field.field.node.district_landing_page.field_last_year
+    - field.field.node.district_landing_page.field_this_year
+    - node.type.district_landing_page
+  module:
+    - text
+    - user
+id: node.district_landing_page.default
+targetEntityType: node
+bundle: district_landing_page
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_district:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_last_year:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_this_year:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  links: true

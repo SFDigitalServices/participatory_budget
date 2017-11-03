@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_year
+    - node.type.district_landing_page
+  module:
+    - text
+id: node.district_landing_page.field_last_year
+field_name: field_last_year
+entity_type: node
+bundle: district_landing_page
+label: 'Last Year'
+description: 'Description of the results of last year''s participatory budgeting process.'
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p class=\"translation\">In past years, San Francisco Supervisorial Districts 3, 7, and 10 have engaged participatory budgeting processes. Projects range in cost from $5,000 to $25,000 and provide support to a range of projects and services in San Francisco. Prior year projects have included:</p>\r\n\r\n<p class=\"translation\"><span class=\"translation\">En los últimos años en los Distritos 3, 7 y 10 se han desarrollado procesos de presupuesto participativo. Las propuesta oscilan entre $5,000 y $25,000 y han financiado propuestas y servicios en San Francisco. En los años pasados las propuestas han incluido: </span></p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://sites.google.com/a/normanyee.com/d7participatorybudgeting/winning-projects-from-past-years\">&nbsp;District 7 Winning Projects</a></li>\r\n\t<li><a href=\"http://myemail.constantcontact.com/Participatory-Budgeting-Results.html?soid=1109991760435&amp;aid=Z_kug5HgH-M\">District 10 Winning Projects</a></li>\r\n</ul>\r\n"
+    format: rich_text
+default_value_callback: ''
+settings: {  }
+field_type: text_long

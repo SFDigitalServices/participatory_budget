@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.district_landing_page
+  module:
+    - text
+id: node.district_landing_page.field_description
+field_name: field_description
+entity_type: node
+bundle: district_landing_page
+label: Description
+description: 'Description of participatory budgeting process for your district.'
+required: true
+translatable: false
+default_value:
+  -
+    value: "<p>Participatory Budgeting is a public process for residents of San Francisco to recommend and vote on how some public funds in the participating districts are budgeted. Residents of participating districts who are 16 years old and older have the opportunity to develop, propose, and vote on onetime services or projects.</p>\r\n\r\n<p class=\"translation\"><span class=\"translation\">&lt;200b&gt;El Presupuesto participativo es un proceso publico para que los residentes de San Francisco puedan decidir a cuales propuestas se provean fondos en los distritos que participan. Residentes de más de 16 años pueden desarrollar, proponer y votar propuestas o proyectos únicos.</span></p>\r\n\r\n<p class=\"translation\"><span class=\"translation\">參與式預算是一項公共 投票程序，它使三藩市第10 區居民聚集一堂，攜手合作，並決定如何利用您所在區的資金。</span></p>\r\n"
+    format: rich_text
+default_value_callback: ''
+settings: {  }
+field_type: text_long
