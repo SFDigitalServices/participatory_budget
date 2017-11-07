@@ -9,7 +9,8 @@
         "drush/drush": "^8.1",
         "drupal/console": "~1.0",
         "drupal/auto_entitylabel": "^2.0@beta",
-        "drupal/token": "^1.0"
+        "drupal/token": "^1.0",
+        "drupal/devel": "^1.2"
     },
     "replace": {
         "drupal/core": "^8.4"
