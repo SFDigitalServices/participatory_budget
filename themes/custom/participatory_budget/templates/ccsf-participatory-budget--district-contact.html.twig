@@ -1,7 +1,5 @@
 <div class="col-md-4">
-  {# TODO: update to voting page when it exists#}
-  {# TODO: reconsider coupling here between theme and module route #}
-  <a href="{{ url('ccsf_participatory_budget.district_landing_page', {'districtNumber': district.field_district_number.value}) }}">Vote for Projects in District {{ district.field_district_number.value }}</a>
+  <a href="district/{{ district.field_district_number.value }}/vote">Vote for Projects in District {{ district.field_district_number.value }}</a>
   <h5>District {{ district.field_district_number.value }} Contact Info:</h5>
   <ul class='contact-info'>
     <li>{{ district.field_contact_name.value }}</li>

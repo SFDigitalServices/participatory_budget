@@ -1,3 +1,21 @@
 <?php
 // vi: filetype=php
 
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function participatory_budget_theme_suggestions_region_alter(array &$suggestions, array $variables, $hook) {
+  // allow overriding region template by content type
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'region__' . $variables['elements']['#region'] . '__' . $content_type;
+  }
+}
+
+function participatory_budget_theme_suggestions_block_alter(array &$suggestions, array $variables, $hook) {
+  // allow overriding block template by content type
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'block__' . $variables['elements']['#id'] . '__' . $content_type;
+  }
+}

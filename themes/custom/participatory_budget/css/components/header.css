@@ -1,7 +1,6 @@
 .banner {
-  background: #82B440 url(../../img/banner.png) repeat-x 50% 50%;
+  background: url(../../img/banner.png) repeat-x 50% 50%;
   padding-bottom: 20px;
-  color: #fff;
   text-align: center;
 }
 

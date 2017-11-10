@@ -30,6 +30,8 @@ main span.translation {
   padding: 10px 0 5px
 }
 
+/* TODO: move these into separate component? */
+
 main .pbmovie {
   height: 230px;
 }
@@ -41,4 +43,13 @@ main .pbmovie iframe {
 main .pbmovie p.credit {
   display: block;
   font-size: smaller;
+}
+
+.invert {
+  background: #82B440;
+  color: #fff;
+}
+
+.invert img.bordered {
+  border: 2px solid #fff;
 }
