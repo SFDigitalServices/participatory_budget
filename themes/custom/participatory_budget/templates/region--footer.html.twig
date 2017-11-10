@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Footer region.
+ *
+ * @see template_preprocess_region()
+ *
+ * @ingroup themeable
+ */
+#}
+<footer class="footer container-fluid">
+  <div class="row">
+    <div class="branding col-md-8">
+      <a class="logo" href="{{ url('<front>') }}">
+        <img class="logo" src="/{{ directory }}/img/footer-logo.png" alt="Go to homepage">
+      </a>
+      <p>
+        City &amp; County of San Francisco
+      </p>
+    </div>
+    <div>
+      {{ content }}
+    </div>
+  </div>
+</div>

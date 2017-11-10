@@ -1,0 +1,7 @@
+<h5>District {{ district.field_district_number.value }} Contact Info:</h5>
+<ul class='contact-info'>
+  <li>{{ district.field_contact_name.value }}</li>
+  <li><a href="mailto:{{ district.field_contact_email.value }}?Subject=Participatory%20Budgeting">{{ district.field_contact_email.value }}</a></li>
+  <li>{{ district.field_contact_phone.value }}</li>
+  <li><a href="{{ district.field_external_district_page.uri }}">For more District {{ district.field_district_number.value }} information.</a></li>
+</ul>

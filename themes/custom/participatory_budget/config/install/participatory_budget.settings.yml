@@ -1,0 +1,4 @@
+logo:
+  # best we can do until https://www.drupal.org/node/1507896 is fixed
+  path: 'themes/custom/participatory_budget/img/logo.png'
+  use_default: false

@@ -1,0 +1,27 @@
+.footer {
+  background: #1e1e1e;
+  color: #fff;
+  font-size: smaller;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 60px 0 0;
+}
+
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5 {
+  color: #999;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .branding {
+  text-align: center;
+}
+
+.footer img.logo {
+  width: 216px;
+  height: 24px;
+}
