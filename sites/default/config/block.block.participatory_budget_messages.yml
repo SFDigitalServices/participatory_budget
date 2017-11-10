@@ -1,0 +1,22 @@
+uuid: 0c6b79e8-f87e-4339-afb7-02bdee3a1288
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - participatory_budget
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: participatory_budget_messages
+theme: participatory_budget
+region: header
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 5bcbba1c-fcf0-42e6-a1eb-1150843ee9f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: RAut7Oo6Tmfxv5mBsaw-RiQ2F-wLO0WYzLtBCMf3SxQ
+name: 'District Landing Page'
+type: district_landing_page
+description: 'This will be the first page users see for your district.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

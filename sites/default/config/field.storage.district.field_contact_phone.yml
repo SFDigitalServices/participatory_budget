@@ -1,0 +1,21 @@
+uuid: c098352f-a6ba-4a6d-9a8c-03fc8daac437
+langcode: en
+status: true
+dependencies:
+  module:
+    - ccsf_district
+    - telephone
+_core:
+  default_config_hash: dK9FP47st9P1LbSA0kv7p4Tr4P13XgIAnhMpv0Rtn3s
+id: district.field_contact_phone
+field_name: field_contact_phone
+entity_type: district
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

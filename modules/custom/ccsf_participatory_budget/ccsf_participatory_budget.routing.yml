@@ -1,9 +1,0 @@
-ccsf_participatory_budget.district_landing_page:
-  path: '/district/{districtNumber}'
-  defaults:
-    _controller: '\Drupal\ccsf_participatory_budget\Controller\DistrictController::districtLandingPage'
-    _title: 'District'
-    districtNumber: ''
-  requirements:
-    _permission: 'access content'
-    districtNumber: \d+

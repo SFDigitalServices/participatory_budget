@@ -1,0 +1,24 @@
+uuid: 9ad09121-6eeb-445c-98a6-b5116cde8b0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.district_voting_page
+  module:
+    - text
+id: node.district_voting_page.field_content
+field_name: field_content
+entity_type: node
+bundle: district_voting_page
+label: content
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "<h3>Supervisor Norman Yee</h3>\r\n\r\n<h1>District 7</h1>\r\n\r\n<p>Thank you for visiting the District 7 San Francisco Participatory Budgeting website. Please return to this page starting March 17th, 2017. Voting will open March 17th through March 31st Proposal applications are currently being accepted through January 8th, 2017</p>\r\n\r\n<p>Please contact District Aide Erica Maybaum at Erica.Maybaum@sfgov.org, or 415-554-6517 for more information regarding this year's voting.</p>\r\n\r\n<p>Gracias por visitar el sitio web del Presupuesto Participativo del Distrito 7. Las votaciones empiezan el 3 de Marzo hasta el 15 de 2017. Por favor Contácten con Erica Maybaum por correo electronico Erica.Maybaum@sfgov.org o por teléfono 415-554-6517 para más informaciones sobre las votaciones.</p>\r\n"
+    format: rich_text
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: 017a6a64-c767-43c6-a6af-9c579c0a3c51
+langcode: en
+status: true
+dependencies:
+  module:
+    - ccsf_district
+_core:
+  default_config_hash: ZFb352CBramkkZKCzhDPirl6IycLkbTy2X8Jpdm7o7g
+id: district.field_contact_name
+field_name: field_contact_name
+entity_type: district
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

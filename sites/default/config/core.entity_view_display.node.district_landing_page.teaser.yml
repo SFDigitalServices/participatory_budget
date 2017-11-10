@@ -1,0 +1,28 @@
+uuid: 10774eee-98f1-4e6a-94b5-63e6ea07f5af
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.district_landing_page.field_description
+    - field.field.node.district_landing_page.field_district
+    - field.field.node.district_landing_page.field_last_year
+    - field.field.node.district_landing_page.field_this_year
+    - node.type.district_landing_page
+  module:
+    - user
+_core:
+  default_config_hash: MexL7t_zix93BJWJIfL9LE8yApeD8kHA-lbrU4ksCck
+id: node.district_landing_page.teaser
+targetEntityType: node
+bundle: district_landing_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_district: true
+  field_last_year: true
+  field_this_year: true

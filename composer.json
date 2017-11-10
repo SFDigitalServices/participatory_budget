@@ -10,7 +10,8 @@
         "drupal/console": "~1.0",
         "drupal/auto_entitylabel": "^2.0@beta",
         "drupal/token": "^1.0",
-        "drupal/devel": "^1.2"
+        "drupal/devel": "^1.2",
+        "drupal/pathauto": "^1.0"
     },
     "replace": {
         "drupal/core": "^8.4"

@@ -1,0 +1,19 @@
+uuid: 62d406cc-51c2-4969-b799-6eff3541addd
+langcode: en
+status: true
+dependencies:
+  module:
+    - ccsf_district
+    - link
+id: district.field_external_district_page
+field_name: field_external_district_page
+entity_type: district
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

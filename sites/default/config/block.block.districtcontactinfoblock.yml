@@ -1,0 +1,20 @@
+uuid: f5f92759-7856-4607-9edb-4371c0ae416f
+langcode: en
+status: true
+dependencies:
+  module:
+    - ccsf_participatory_budget
+  theme:
+    - participatory_budget
+id: districtcontactinfoblock
+theme: participatory_budget
+region: footer
+weight: -4
+provider: null
+plugin: district_contact_block
+settings:
+  id: district_contact_block
+  label: 'District contact info block'
+  provider: ccsf_participatory_budget
+  label_display: '0'
+visibility: {  }

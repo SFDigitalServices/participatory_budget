@@ -1,0 +1,22 @@
+uuid: 99243b44-5093-453f-8c34-c4ee2ba80751
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.district.field_contact_email
+  module:
+    - ccsf_district
+_core:
+  default_config_hash: busP970lh3wxAOLXbADkwprp-cMgb578XBFT4P59cwQ
+id: district.district.field_contact_email
+field_name: field_contact_email
+entity_type: district
+bundle: district
+label: 'Contact Email'
+description: 'Email address of primary contact for participatory budgeting.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

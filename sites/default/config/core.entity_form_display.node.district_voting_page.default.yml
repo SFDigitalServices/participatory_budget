@@ -1,0 +1,50 @@
+uuid: 4d0c3ac4-0438-448a-873a-3062c5d3d89d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.district_voting_page.field_content
+    - field.field.node.district_voting_page.field_district
+    - field.field.node.district_voting_page.field_image
+    - image.style.thumbnail
+    - node.type.district_voting_page
+  module:
+    - image
+    - text
+id: node.district_voting_page.default
+targetEntityType: node
+bundle: district_voting_page
+mode: default
+content:
+  field_content:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_district:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: e7741b0c-df96-4d94-9cec-6c532153e28e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: district_landing_page
+label: 'District Landing Page'
+type: 'canonical_entities:node'
+pattern: '/district/[node:field_district:entity:field_district_number]'
+selection_criteria:
+  9a2e73d8-b7c6-410d-acf9-d4ad2a5119d8:
+    id: node_type
+    bundles:
+      district_landing_page: district_landing_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9a2e73d8-b7c6-410d-acf9-d4ad2a5119d8
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,10 @@
+uuid: de615d01-58e9-4a50-8fb4-183be0983e58
+langcode: en
+status: true
+dependencies:
+  module:
+    - ccsf_district
+id: district.token
+label: Token
+targetEntityType: district
+cache: true

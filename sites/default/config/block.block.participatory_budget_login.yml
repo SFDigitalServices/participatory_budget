@@ -1,0 +1,22 @@
+uuid: 18b31c6d-202e-4165-be08-ede1972cd571
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - participatory_budget
+_core:
+  default_config_hash: 4QlSnWBcxxKMIFRM8sbu_MjSkcp3NjGgnVrc-lynQHI
+id: participatory_budget_login
+theme: participatory_budget
+region: header
+weight: -2
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

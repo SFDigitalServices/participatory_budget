@@ -1,0 +1,28 @@
+uuid: 4633dd0a-7b72-45ca-a969-996326c6eaae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_district
+    - node.type.district_landing_page
+_core:
+  default_config_hash: RmG5hiSuCB9vScHpWD7r670u3rFgoPQXZcMiqhq-ves
+id: node.district_landing_page.field_district
+field_name: field_district
+entity_type: node
+bundle: district_landing_page
+label: District
+description: 'District associated with this landing page.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:district'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: field_district_number
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

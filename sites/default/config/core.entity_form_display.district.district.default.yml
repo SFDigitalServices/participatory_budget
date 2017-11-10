@@ -1,0 +1,70 @@
+uuid: d1cdeaeb-2ccf-4cad-932b-285a8b068f78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.district.district.field_contact_email
+    - field.field.district.district.field_contact_name
+    - field.field.district.district.field_contact_phone
+    - field.field.district.district.field_district_number
+    - field.field.district.district.field_external_district_page
+  module:
+    - ccsf_district
+    - link
+    - telephone
+_core:
+  default_config_hash: TdVxH8Smrikp-rEmgtkBjuXZtVQZ2eEgWqXojwVKdwo
+id: district.district.default
+targetEntityType: district
+bundle: district
+mode: default
+content:
+  field_contact_email:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_contact_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_phone:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_district_number:
+    weight: 0
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_external_district_page:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  name: true

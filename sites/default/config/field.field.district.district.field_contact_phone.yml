@@ -1,0 +1,23 @@
+uuid: bc7354b6-05f6-4468-93a1-eb9a80456c45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.district.field_contact_phone
+  module:
+    - ccsf_district
+    - telephone
+_core:
+  default_config_hash: Tr5ywIvyK5BWGT6RLld_Mi1x1lK_3tQ8JYUCKqL9its
+id: district.district.field_contact_phone
+field_name: field_contact_phone
+entity_type: district
+bundle: district
+label: 'Contact Phone'
+description: 'Phone number of primary contact for participatory budgeting.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

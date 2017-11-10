@@ -1,0 +1,21 @@
+uuid: 621da785-b27d-4c62-95cf-ce7f9b2d2021
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: 8FF9Dx0ZnHmBk1lee8-lWel-EJkcstgj1oi-FX8xHCE
+id: node.field_last_year
+field_name: field_last_year
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

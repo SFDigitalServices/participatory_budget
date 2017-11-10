@@ -4,8 +4,6 @@ namespace Drupal\ccsf_participatory_budget\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
-use Drupal\ccsf_participatory_budget\Controller\DistrictController;
-
 /**
  * Provides a 'DistrictContact' Block.
  *
@@ -23,17 +21,15 @@ class DistrictContactBlock extends BlockBase {
   public function build() {
     // if the route included a district number, load the district to display
     // the contact info for
-    $districtNumber = \Drupal::routeMatch()->getParameter('districtNumber');
+    $node = \Drupal::routeMatch()->getParameter('node');
 
-    if (!$districtNumber) {
+    if (!$node || !$node->hasField('field_district')) {
       return array();
     }
 
-    $districtId = DistrictController::getDistrictIdForNumber($districtNumber);
-
     return array(
       '#theme' => 'ccsf_participatory_budget__district_contact',
-      '#district' => \Drupal::entityManager()->getStorage('district')->load($districtId),
+      '#district' => $node->get('field_district')->entity,
     );
   }
 }

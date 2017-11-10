@@ -1,0 +1,26 @@
+uuid: 03612bc2-bc21-45ea-8896-4f777c6d100d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_district
+    - node.type.district_voting_page
+id: node.district_voting_page.field_district
+field_name: field_district
+entity_type: node
+bundle: district_voting_page
+label: District
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:district'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: field_district_number
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

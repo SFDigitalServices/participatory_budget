@@ -1,0 +1,22 @@
+uuid: 6985ca6c-7187-4467-a409-3023b4b5c9ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - ccsf_district
+_core:
+  default_config_hash: 4PCIC3z-wb_PPRqW0YdCtuwlKQwXF9_HTvu-xWErlz0
+id: district.field_district_number
+field_name: field_district_number
+entity_type: district
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

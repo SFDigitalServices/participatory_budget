@@ -1,0 +1,24 @@
+uuid: dbe81c91-5e22-4132-8f84-0d46308e6041
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.district_landing_page
+_core:
+  default_config_hash: eBgqQ0_iHHEPVody--h6PTGclzGJqigW3X-9d0pBAs4
+id: node.district_landing_page.promote
+field_name: promote
+entity_type: node
+bundle: district_landing_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

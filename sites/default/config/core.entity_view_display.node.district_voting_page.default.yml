@@ -1,0 +1,41 @@
+uuid: a66aaceb-565c-4f1b-8470-c50d69ab4fea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.district_voting_page.field_content
+    - field.field.node.district_voting_page.field_district
+    - field.field.node.district_voting_page.field_image
+    - node.type.district_voting_page
+  module:
+    - image
+    - text
+    - user
+id: node.district_voting_page.default
+targetEntityType: node
+bundle: district_voting_page
+mode: default
+content:
+  field_content:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_district: true

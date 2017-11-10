@@ -1,0 +1,22 @@
+uuid: a63f78a9-1c92-4e38-a721-2961730fbb1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: district_voting_page
+label: 'District Voting Page'
+type: 'canonical_entities:node'
+pattern: '/district/[node:field_district:entity:field_district_number]/vote'
+selection_criteria:
+  6745d462-6a7b-4e1e-be4e-395e8f9de661:
+    id: node_type
+    bundles:
+      district_voting_page: district_voting_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6745d462-6a7b-4e1e-be4e-395e8f9de661
+selection_logic: and
+weight: -5
+relationships: {  }

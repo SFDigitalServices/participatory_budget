@@ -1,0 +1,23 @@
+uuid: 400a1b8e-4d49-4d79-8222-0a1a2b4d4679
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.district.field_external_district_page
+  module:
+    - ccsf_district
+    - link
+id: district.district.field_external_district_page
+field_name: field_external_district_page
+entity_type: district
+bundle: district
+label: 'External District Page'
+description: 'Link to sfbos.org site for district (e.g. http://www.sfbos.org/index.aspx?page=13827).'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
