@@ -6,6 +6,8 @@ libraries:
   - participatory_budget/global-styling
   - participatory_budget/bootstrap
   - participatory_budget/font-awesome
+ckeditor_stylesheets:
+  - css/theme.css
 base theme: False
 regions:
   header: 'Header'

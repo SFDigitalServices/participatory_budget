@@ -24,12 +24,6 @@ main .about {
   text-align: center;
 }
 
-main span.translation {
-  font-size: smaller;
-  display: block;
-  padding: 10px 0 5px
-}
-
 /* TODO: move these into separate component? */
 
 main .pbmovie {
@@ -45,6 +39,8 @@ main .pbmovie p.credit {
   font-size: smaller;
 }
 
+/********************************************/
+
 .invert {
   background: #82B440;
   color: #fff;
@@ -52,4 +48,10 @@ main .pbmovie p.credit {
 
 .invert img.bordered {
   border: 2px solid #fff;
+}
+
+p.translation, main span.translation {
+  font-size: smaller;
+  display: block;
+  padding: 10px 0 5px
 }
