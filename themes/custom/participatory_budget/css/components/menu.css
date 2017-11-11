@@ -1,0 +1,23 @@
+#block-front-page-navigation .district-link-wrapper > a {
+  display: block;
+
+  border: 1px solid #fff;
+  background-color: #82b440;
+  color: white;
+  text-decoration: none;
+
+  text-align: center;
+
+  font-size: larger;
+  font-weight: bold;
+
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#block-front-page-navigation .district-link-wrapper > a:hover {
+  background-color: #5f842f;
+}

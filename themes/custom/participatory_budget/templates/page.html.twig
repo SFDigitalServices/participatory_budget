@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Front page with district listing
+ * Default theme page template.
  *
  * @see template_preprocess_page()
  * @see html.html.twig
@@ -12,9 +12,9 @@
     <header class="header">
       {{ page.header }}
     </header>
-    <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix">
+    <div id="main-wrapper" class="clearfix">
       <div id="main" class="layout-main clearfix">
-        <main id="content" class="column main-content" role="main">
+        <main id="content" role="main">
           <section class="section">
             <a id="main-content" tabindex="-1"></a>
             {{ page.content }}
@@ -22,7 +22,7 @@
         </main>
       </div>
     </div>
-    <footer>
+    <footer class="footer">
       {{ page.footer }}
     </footer>
   </div>

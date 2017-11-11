@@ -1,0 +1,17 @@
+uuid: 7a21ae85-667e-42ee-a7b6-62cc118d36ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Empty
+type: empty
+description: 'Empty content type (useful for creating blank pages that only display blocks, e.g. the front page).'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

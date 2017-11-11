@@ -1,0 +1,29 @@
+uuid: ac0a80b3-d6b4-4bbc-b981-cdafc29b0387
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - participatory_budget
+id: front_page_navigation
+theme: participatory_budget
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Front Page Navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
