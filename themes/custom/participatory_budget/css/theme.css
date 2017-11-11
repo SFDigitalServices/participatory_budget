@@ -42,7 +42,7 @@ main .pbmovie iframe {
 
 main .pbmovie p.credit {
   display: block;
-  font-size: smaller;
+  font-size: small;
 }
 
 /********************************************/
@@ -57,7 +57,7 @@ main .pbmovie p.credit {
 }
 
 p.translation, main span.translation {
-  font-size: smaller;
+  font-size: small;
   display: block;
   padding: 10px 0 5px
 }
