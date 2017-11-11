@@ -21,6 +21,11 @@
   background-color: #5f842f;
 }
 
+#block-front-page-navigation a:before {
+  font-family: FontAwesome;
+  content: "\f046 ";
+}
+
 #block-mainnavigation .button > a {
   display: block;
 
@@ -41,4 +46,9 @@
 
 #block-mainnavigation .button > a:hover {
   background-color: #fff;
+}
+
+#block-mainnavigation a:before {
+  font-family: FontAwesome;
+  content: "\f046 ";
 }

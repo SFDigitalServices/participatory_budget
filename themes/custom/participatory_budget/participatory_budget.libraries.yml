@@ -28,6 +28,6 @@ font-awesome:
     gpl-compatible: true
   css:
     theme:
-      font-awesome-4.7.0/css/font-awesome.min.css: { minified: true }
+      vendor/font-awesome-4.7.0/css/font-awesome.min.css: { minified: true }
   dependencies:
     - core/jquery
