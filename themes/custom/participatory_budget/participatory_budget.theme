@@ -34,6 +34,17 @@ function participatory_budget_preprocess_menu(&$variables) {
       $link['attributes']->addClass('col-xs-6 district-link-wrapper');
     }
   }
+
+  // style front page navigation menu
+  if ($variables['menu_name'] == 'main' && $variables['attributes']['block'] == 'block-mainnavigation') {
+    if (!isset($variables['attributes']['class'])) {
+      $variables['attributes']['class'] = [];
+    }
+    $variables['attributes']['class'] = array_merge($variables['attributes']['class'], ['container list-unstyled']);
+    foreach ($variables['items'] as $id => $link) {
+      $link['attributes']->addClass('col-xs-4 button');
+    }
+  }
 }
 
 /**

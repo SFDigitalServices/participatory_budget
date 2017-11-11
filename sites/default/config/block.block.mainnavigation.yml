@@ -1,0 +1,32 @@
+uuid: 869878f5-8547-45e2-887e-5ae4a8653559
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - ctools
+    - system
+  theme:
+    - participatory_budget
+id: mainnavigation
+theme: participatory_budget
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 2
+  depth: 1
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      district_landing_page: district_landing_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
