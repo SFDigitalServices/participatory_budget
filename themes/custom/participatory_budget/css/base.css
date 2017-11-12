@@ -20,6 +20,9 @@
     .pull-left-xs {
         float: left;
     }
+    .text-center-xs {
+      text-align: center;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .pull-right-not-sm, .pull-left-not-sm {
@@ -30,6 +33,9 @@
     }
     .pull-left-sm {
         float: left;
+    }
+    .text-center-sm {
+      text-align: center;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -42,6 +48,9 @@
     .pull-left-md {
         float: left;
     }
+    .text-center-md {
+      text-align: center;
+    }
 }
 @media (min-width: 1200px) {
     .pull-right-not-lg, .pull-left-not-lg {
@@ -52,5 +61,8 @@
     }
     .pull-left-lg {
         float: left;
+    }
+    .text-center-lg {
+      text-align: center;
     }
 }

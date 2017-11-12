@@ -2,6 +2,7 @@
   display: block;
 
   border: 1px solid #fff;
+  margin-bottom: 1em;
   background-color: #82b440;
   color: white;
   text-decoration: none;
@@ -30,6 +31,7 @@
   display: block;
 
   padding: 15px 0;
+  margin-bottom: 1em;
   text-align: center;
 
   border: 1px solid #fff;

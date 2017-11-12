@@ -31,7 +31,7 @@ function participatory_budget_preprocess_menu(&$variables) {
     }
     $variables['attributes']['class'] = array_merge($variables['attributes']['class'], ['list-unstyled']);
     foreach ($variables['items'] as $id => $link) {
-      $link['attributes']->addClass('col-xs-6 district-link-wrapper');
+      $link['attributes']->addClass('col-md-6 district-link-wrapper');
     }
   }
 
@@ -42,7 +42,7 @@ function participatory_budget_preprocess_menu(&$variables) {
     }
     $variables['attributes']['class'] = array_merge($variables['attributes']['class'], ['container list-unstyled']);
     foreach ($variables['items'] as $id => $link) {
-      $link['attributes']->addClass('col-xs-4 button');
+      $link['attributes']->addClass('col-md-4 button');
     }
   }
 }

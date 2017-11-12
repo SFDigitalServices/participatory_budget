@@ -40,8 +40,7 @@ main .pbmovie iframe {
   border: 1px solid #82B440
 }
 
-main .pbmovie p.credit {
-  display: block;
+main p.credit {
   font-size: small;
 }
 
