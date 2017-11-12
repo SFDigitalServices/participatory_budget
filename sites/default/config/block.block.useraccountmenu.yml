@@ -1,0 +1,24 @@
+uuid: 8e5fef53-2762-4d7b-a863-cf5137a7bef0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - participatory_budget
+id: useraccountmenu
+theme: participatory_budget
+region: admin_sidebar
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }
