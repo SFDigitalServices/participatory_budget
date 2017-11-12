@@ -12,4 +12,6 @@ base theme: False
 regions:
   header: 'Header'
   content: 'Content'
+  development_sidebar: 'Development sidebar'
+  admin_sidebar: 'Admin sidebar'
   footer: 'Footer'

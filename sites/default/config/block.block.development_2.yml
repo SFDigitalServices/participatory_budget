@@ -1,6 +1,6 @@
-uuid: e361acd6-62cb-4834-b535-9d3b5ab3c6f9
+uuid: c58c59e4-e518-497f-90d5-99fcb2fad469
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.devel
@@ -8,17 +8,17 @@ dependencies:
     - system
   theme:
     - participatory_budget
-id: development
+id: development_2
 theme: participatory_budget
-region: header
-weight: -4
+region: development_sidebar
+weight: 0
 provider: null
 plugin: 'system_menu_block:devel'
 settings:
   id: 'system_menu_block:devel'
   label: Development
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
 visibility: {  }

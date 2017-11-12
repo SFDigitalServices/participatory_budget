@@ -1,20 +1,18 @@
-uuid: 844797d0-f52f-485b-a68f-1c4dcba68a05
+uuid: 74979574-fe8b-45bc-92a2-f9f0453bea74
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
     - participatory_budget
-_core:
-  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
-id: participatory_budget_local_actions
+id: primaryadminactions
 theme: participatory_budget
-region: header
-weight: -1
+region: admin_sidebar
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:
   id: local_actions_block
   label: 'Primary admin actions'
   provider: core
-  label_display: '0'
+  label_display: visible
 visibility: {  }

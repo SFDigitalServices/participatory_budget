@@ -1,6 +1,6 @@
 uuid: 93c7ef0f-bf66-4fa5-ac14-db0fff9b92be
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -12,8 +12,8 @@ _core:
   default_config_hash: xCOijLdB1-UgXxQ9a0D1_pd8vxNEhfMnxXZc8jYhHjs
 id: participatory_budget_tools
 theme: participatory_budget
-region: footer
-weight: 0
+region: header
+weight: -3
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
