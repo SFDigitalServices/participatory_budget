@@ -9,7 +9,7 @@ _core:
 id: participatory_budget_local_tasks
 theme: participatory_budget
 region: header
-weight: -4
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:
