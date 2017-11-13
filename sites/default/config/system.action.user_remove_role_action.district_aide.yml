@@ -1,0 +1,14 @@
+uuid: 00b33fbd-a9ca-4ce8-bd2f-ba175eee093a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.district_aide
+  module:
+    - user
+id: user_remove_role_action.district_aide
+label: 'Remove the District Aide role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: district_aide

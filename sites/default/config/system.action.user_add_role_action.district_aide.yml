@@ -1,0 +1,14 @@
+uuid: 7822a7d9-d7f5-4299-9d6e-69879eb59209
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.district_aide
+  module:
+    - user
+id: user_add_role_action.district_aide
+label: 'Add the District Aide role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: district_aide

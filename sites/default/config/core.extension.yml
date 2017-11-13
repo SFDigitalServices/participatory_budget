@@ -1,6 +1,9 @@
 module:
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
   auto_entitylabel: 0
   block: 0
+  breakpoint: 0
   ccsf_district: 0
   ccsf_participatory_budget: 0
   ckeditor: 0
@@ -29,6 +32,7 @@ module:
   telephone: 0
   text: 0
   token: 0
+  toolbar: 0
   user: 0
   menu_link_content: 1
   pathauto: 1

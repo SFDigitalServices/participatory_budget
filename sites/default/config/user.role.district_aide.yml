@@ -1,0 +1,39 @@
+uuid: 239c71b4-a4c2-430e-97be-3b35c6d6159e
+langcode: en
+status: true
+dependencies: {  }
+id: district_aide
+label: 'District Aide'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access district overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'add district entities'
+  - 'change own username'
+  - 'create district_landing_page content'
+  - 'create district_voting_page content'
+  - 'delete any district_landing_page content'
+  - 'delete any district_voting_page content'
+  - 'delete district entities'
+  - 'delete district_landing_page revisions'
+  - 'delete district_voting_page revisions'
+  - 'delete own district_landing_page content'
+  - 'delete own district_voting_page content'
+  - 'edit any district_landing_page content'
+  - 'edit any district_voting_page content'
+  - 'edit district entities'
+  - 'edit own district_landing_page content'
+  - 'edit own district_voting_page content'
+  - 'revert district_landing_page revisions'
+  - 'revert district_voting_page revisions'
+  - 'view all district revisions'
+  - 'view district_landing_page revisions'
+  - 'view district_voting_page revisions'
+  - 'view own unpublished content'
+  - 'view published district entities'
+  - 'view the administration theme'
+  - 'view unpublished district entities'
