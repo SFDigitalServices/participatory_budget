@@ -50,21 +50,13 @@ content:
     type: number
     region: content
   field_external_district_page:
-    weight: 26
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
-  user_id:
-    type: entity_reference_autocomplete
-    weight: 4
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
 hidden:
   name: true
+  user_id: true
