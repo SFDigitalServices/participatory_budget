@@ -1,6 +1,6 @@
 uuid: 74979574-fe8b-45bc-92a2-f9f0453bea74
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - participatory_budget
