@@ -1,6 +1,8 @@
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  administerusersbyrole: 0
+  administerusersbyrole_hack: 0
   auto_entitylabel: 0
   block: 0
   breakpoint: 0

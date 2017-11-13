@@ -1,0 +1,14 @@
+uuid: 2846cc20-cdcd-4dd7-9eff-373d9336a4b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.controller_staff
+  module:
+    - user
+id: user_add_role_action.controller_staff
+label: 'Add the Controller Staff role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: controller_staff

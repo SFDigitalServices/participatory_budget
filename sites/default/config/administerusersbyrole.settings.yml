@@ -1,0 +1,8 @@
+mode: complex
+simple:
+  include_exclude: include
+  roles:
+    district_aide: district_aide
+    controller_staff: controller_staff
+_core:
+  default_config_hash: E1RrlXpwle17dQlkfMMukq1w93flJzPkrAz-K0JpyiY
