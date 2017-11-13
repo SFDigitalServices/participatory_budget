@@ -24,6 +24,10 @@ function participatory_budget_theme_suggestions_block_alter(array &$suggestions,
  * Implements hook_preprocess_HOOK() for menu.html.twig.
  */
 function participatory_budget_preprocess_menu(&$variables) {
+  if (!isset($variables['menu_name'])) {
+    return;
+  }
+
   // style front page navigation menu
   if ($variables['menu_name'] == 'main' && $variables['attributes']['block'] == 'block-front-page-navigation') {
     if (!isset($variables['attributes']['class'])) {
