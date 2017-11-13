@@ -1,0 +1,9 @@
+services:
+  administerusersbyrole.route_subscriber:
+    class: Drupal\administerusersbyrole\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  plugin.manager.administerusersbyrole:
+    class: Drupal\administerusersbyrole\AccessManagerManager
+    parent: default_plugin_manager
+    arguments: ['@config.factory']

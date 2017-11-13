@@ -1,0 +1,6 @@
+create users:
+  title: 'Create new users'
+access users overview:
+  title: 'Access the users overview page'
+permission_callbacks:
+  - Drupal\administerusersbyrole\AdministerusersbyrolePermissions::permissions
