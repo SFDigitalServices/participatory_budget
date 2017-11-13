@@ -12,7 +12,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Tabs
+  label: Actions
   provider: core
   label_display: visible
   primary: true
