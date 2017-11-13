@@ -1,5 +1,8 @@
 .banner {
-  background: url(../../img/banner.png) repeat-x center bottom;
+  background-image: url(../../img/banner.png);
+  background-repeat: repeat-x;
+  background-position: 50% 50%;
+
   padding-bottom: 20px;
   text-align: center;
 }
