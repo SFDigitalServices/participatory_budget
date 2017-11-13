@@ -8,6 +8,11 @@
   margin: 60px 0 0;
 }
 
+.footer a, a:hover {
+  color: #82B440;
+  background: transparent;
+}
+
 .footer h1, .footer h2, .footer h3, .footer h4, .footer h5 {
   color: #999;
 }
