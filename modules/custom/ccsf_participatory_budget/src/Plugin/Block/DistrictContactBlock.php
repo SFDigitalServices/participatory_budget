@@ -29,10 +29,21 @@ class DistrictContactBlock extends BlockBase {
 
     return array(
       '#theme' => 'ccsf_participatory_budget__district_contact',
-      '#cache' => [
-        'max-age' => 0,
-      ],
       '#district' => $node->get('field_district')->entity,
     );
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheTags() {
+    //With this when your node change your block will rebuild
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+      //if there is node add its cachetag
+      return Cache::mergeTags(parent::getCacheTags(), array('node:' . $node->id()));
+    } else {
+      //Return default tags instead.
+      return parent::getCacheTags();
+    }
   }
 }
