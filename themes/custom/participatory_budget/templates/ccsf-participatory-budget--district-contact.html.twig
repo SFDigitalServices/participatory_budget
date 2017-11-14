@@ -1,5 +1,5 @@
 <div class="col-md-4 text-center-xs text-center-sm">
-  <a href="district/{{ district.field_district_number.value }}/vote">Vote for Projects in District {{ district.field_district_number.value }}</a>
+  <a href="{{ base_path }}/district/{{ district.field_district_number.value }}/vote">Vote for Projects in District {{ district.field_district_number.value }}</a>
   <h5>District {{ district.field_district_number.value }} Contact Info:</h5>
   <ul class='contact-info'>
     <li>{{ district.field_contact_name.value }}</li>
