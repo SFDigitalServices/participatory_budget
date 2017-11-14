@@ -48,6 +48,9 @@ main p.credit {
 
 .invert {
   background: #82B440;
+}
+
+.invert * {
   color: #fff;
 }
 
