@@ -36,14 +36,7 @@ class DistrictContactBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
-  public function getCacheTags() {
-    //With this when your node change your block will rebuild
-    if ($node = \Drupal::routeMatch()->getParameter('node')) {
-      //if there is node add its cachetag
-      return \Drupal\Core\Cache\Cache::mergeTags(parent::getCacheTags(), array('node:' . $node->id()));
-    } else {
-      //Return default tags instead.
-      return parent::getCacheTags();
-    }
+  public function getCacheMaxAge() {
+    return 0;
   }
 }
