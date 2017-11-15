@@ -12,6 +12,20 @@ function ccsf_participatory_budget_theme($existing, $type, $theme, $path) {
 }
 
 /**
+ * Implements hook_user_login().
+ */
+function ccsf_participatory_budget_user_login(\Drupal\user\UserInterface $account) {
+  // Default login destination to the dashboard.
+  $current_request = \Drupal::service('request_stack')->getCurrentRequest();
+  if (!$current_request->query->get('destination')) {
+    $current_request->query->set(
+      'destination',
+      \Drupal\Core\Url::fromRoute('<front>')->toString()
+    );
+  }
+}
+
+/**
  * Implements hook_toolbar().
  *
  * Adds tabs (page actions) to admin_toolbar
