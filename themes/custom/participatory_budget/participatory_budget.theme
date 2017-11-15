@@ -1,6 +1,8 @@
 <?php
 // vi: filetype=php
 
+use \Drupal\Core\Form\FormStateInterface;
+
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  */
@@ -17,6 +19,20 @@ function participatory_budget_theme_suggestions_block_alter(array &$suggestions,
   if ($node = \Drupal::routeMatch()->getParameter('node')) {
     $content_type = $node->bundle();
     $suggestions[] = 'block__' . $variables['elements']['#id'] . '__' . $content_type;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function participatory_budget_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  switch ($form_id) {
+  case 'user_pass':
+    $form['#prefix'] = t('<h2>Password reset</h2>');
+    break;
+  case 'user_login_form':
+    $form['#prefix'] = t('<h2>Login</h2>');
+    break;
   }
 }
 
