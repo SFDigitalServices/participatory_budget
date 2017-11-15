@@ -12,7 +12,7 @@ dependencies:
 id: mainnavigation
 theme: participatory_budget
 region: header
-weight: -3
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:

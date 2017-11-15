@@ -11,7 +11,7 @@ dependencies:
 id: front_page_navigation
 theme: participatory_budget
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:
