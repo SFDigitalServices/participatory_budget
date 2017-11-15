@@ -11,7 +11,7 @@ dependencies:
 id: administration
 theme: participatory_budget
 region: admin_sidebar
-weight: -3
+weight: -5
 provider: null
 plugin: 'system_menu_block:admin'
 settings:

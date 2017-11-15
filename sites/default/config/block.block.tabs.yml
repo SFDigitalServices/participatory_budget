@@ -7,7 +7,7 @@ dependencies:
 id: tabs
 theme: participatory_budget
 region: admin_sidebar
-weight: -6
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:
