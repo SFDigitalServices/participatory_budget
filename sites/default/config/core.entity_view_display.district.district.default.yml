@@ -12,7 +12,6 @@ dependencies:
     - ccsf_district
     - link
     - telephone
-    - user
 _core:
   default_config_hash: ahYbMb22hRR1MkFUX4iG0Tou33w_SjOopltULj02Bk8
 id: district.district.default
@@ -53,7 +52,7 @@ content:
     type: number_integer
     region: content
   field_external_district_page:
-    weight: 5
+    weight: 4
     label: above
     settings:
       trim_length: 80
@@ -64,12 +63,6 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  user_id:
-    label: hidden
-    type: author
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   name: true
+  user_id: true
