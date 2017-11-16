@@ -1,6 +1,0 @@
-help.page.ccsf_participatory_budget:
-  defaults:
-    _controller: '\Drupal\ccsf_participatory_budget\Controller\HelpController::content'
-    _title: 'Participatory Budget Help'
-  requirements:
-    _permission: 'access content'
