@@ -6873,5 +6873,54 @@
         "support": {
             "source": "http://cgit.drupalcode.org/administerusersbyrole"
         }
+    },
+    {
+        "name": "drupal/admin_links_access_filter",
+        "version": "1.0.0-alpha3",
+        "version_normalized": "1.0.0.0-alpha3",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/admin_links_access_filter",
+            "reference": "8.x-1.0-alpha3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/admin_links_access_filter-8.x-1.0-alpha3.zip",
+            "reference": "8.x-1.0-alpha3",
+            "shasum": "410543c4b14d5c88fa53d7256717756cab522e65"
+        },
+        "require": {
+            "drupal/core": "~8.1"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha3",
+                "datestamp": "1481822103",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Project has not opted into security advisory coverage!"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "agoradesign",
+                "homepage": "https://www.drupal.org/user/1183886"
+            }
+        ],
+        "description": "Administration links access filter provides a workaround for the common problem that users with 'Use the administration pages and help' permission see menu links they don't have access permission for.",
+        "homepage": "http://drupal.org/project/admin_links_access_filter",
+        "support": {
+            "source": "http://cgit.drupalcode.org/admin_links_access_filter"
+        }
     }
 ]

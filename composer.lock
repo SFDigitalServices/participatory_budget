@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "19e7e298e6c932af3767eae564a19acb",
+    "content-hash": "8291dff14b7560001b1df76998be2569",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1002,6 +1002,53 @@
                 "parser"
             ],
             "time": "2014-09-09T13:34:57+00:00"
+        },
+        {
+            "name": "drupal/admin_links_access_filter",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/admin_links_access_filter",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_links_access_filter-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "410543c4b14d5c88fa53d7256717756cab522e65"
+            },
+            "require": {
+                "drupal/core": "~8.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1481822103",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "agoradesign",
+                    "homepage": "https://www.drupal.org/user/1183886"
+                }
+            ],
+            "description": "Administration links access filter provides a workaround for the common problem that users with 'Use the administration pages and help' permission see menu links they don't have access permission for.",
+            "homepage": "http://drupal.org/project/admin_links_access_filter",
+            "support": {
+                "source": "http://cgit.drupalcode.org/admin_links_access_filter"
+            }
         },
         {
             "name": "drupal/admin_toolbar",
@@ -6660,6 +6707,7 @@
     "stability-flags": {
         "drupal/auto_entitylabel": 10,
         "drupal/administerusersbyrole": 15,
+        "drupal/admin_links_access_filter": 15,
         "behat/mink": 20
     },
     "prefer-stable": true,
