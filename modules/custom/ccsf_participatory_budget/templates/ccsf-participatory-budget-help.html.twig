@@ -1,0 +1,53 @@
+<p>
+  This page contains basic documentation for administering the Participatory
+  Budgeting site.
+</p>
+
+<p>
+  Please <a href="mailto:{{site_email}}">reach out to us</a> if
+  anything could be improved.
+</p>
+
+<h3>Curating district contact information</h3>
+
+<p>
+  Before content pages can be created for a district, the district "entity"
+  must first be created to store the contact information for the district. You
+  can view/edit existing districts and create a new one via the <a href="{{
+  path('entity.district.collection') }}">{{ 'district listing page'|t }}</a> (also
+  accessible via Manage -> Structure -> District list in the menu).
+</p>
+
+<h3>Curating content</h3>
+
+<p>
+  To create view/edit content pages for a district, head to the <a href="{{
+  path('system.admin_content') }}">{{ 'content listing page'|t }}</a>.  Each
+  district should have a landing page and a voting page content entry. When
+  viewing an editable page on the site, you will also see a menu option to edit
+  the current page.
+</p>
+
+<p>
+  New content pages can be created via the "Add Content" button (e.g. for new
+  districts). When creating new content, be sure to add it to the main navigation
+  menu (see below) so that users can discover it.
+</p>
+
+<p>
+  In the future, the ability to create arbitrary content pages may be added (<a
+  href="mailto:{{site_email}}">let us know</a> if this would be
+  useful!).
+</p>
+
+<h3>Updating the navigation menu</h3>
+
+<p>
+  The primary way users will discover content is via the navigation links on
+  each page. These are configured via the
+  <a href="{{ path('entity.menu.edit_form', {'menu': 'main'}) }}">{{ 'main navigation
+    menu'|t }}</a> which is represented as a tree. The top level links should
+  be links to each district's landing page. Links indented under each landing
+  page link will appear within the navigation menu on the landing page.
+  Internal and external links can be created in this way.
+</p>

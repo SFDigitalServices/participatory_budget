@@ -1,11 +1,18 @@
 <?php
 // vi: filetype=php
 
+use Drupal\Core\Routing\RouteMatchInterface;
+
 function ccsf_participatory_budget_theme($existing, $type, $theme, $path) {
   return array(
     'ccsf_participatory_budget__district_contact' => array(
       'variables' => array(
         'district' => null
+      ),
+    ),
+    'ccsf_participatory_budget_help' => array(
+      'variables' => array(
+        'site_email' => \Drupal::config('system.site')->get('mail'),
       ),
     ),
   );
@@ -22,5 +29,17 @@ function ccsf_participatory_budget_user_login(\Drupal\user\UserInterface $accoun
       'destination',
       \Drupal\Core\Url::fromRoute('<front>')->toString()
     );
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function ccsf_participatory_budget_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+  case 'help.page.ccsf_participatory_budget':
+    return [
+      '#theme' => 'ccsf_participatory_budget_help',
+    ];
   }
 }
