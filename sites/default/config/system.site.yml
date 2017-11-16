@@ -3,7 +3,7 @@ name: 'Participatory Budgeting'
 mail: jesse.szwedko@sfgov.org
 slogan: 'Your Community. Your Voice.'
 page:
-  403: ''
+  403: /user/login
   404: ''
   front: /node/6
 admin_compact_mode: false
