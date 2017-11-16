@@ -9,5 +9,6 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access administration pages'
   - 'access content'
   - 'use text format rich_text'
