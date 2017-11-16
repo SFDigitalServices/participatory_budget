@@ -20,6 +20,10 @@ class DistrictHtmlRouteProvider extends AdminHtmlRouteProvider {
   public function getRoutes(EntityTypeInterface $entity_type) {
     $collection = parent::getRoutes($entity_type);
 
+    if ($collection_route = $collection->get('entity.district.collection')) {
+      $collection_route->setRequirement('_permission', 'access district overview');
+    }
+
     $entity_type_id = $entity_type->id();
 
     if ($history_route = $this->getHistoryRoute($entity_type)) {
