@@ -13,6 +13,7 @@ permissions:
   - 'access user profiles'
   - 'access users overview'
   - 'add district entities'
+  - 'administer menu'
   - 'cancel users by role'
   - 'cancel users with role controller_staff'
   - 'cancel users with role district_aide'

@@ -13,6 +13,7 @@ permissions:
   - 'access toolbar'
   - 'access user profiles'
   - 'add district entities'
+  - 'administer menu'
   - 'change own username'
   - 'create district_landing_page content'
   - 'create district_voting_page content'
