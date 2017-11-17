@@ -74,4 +74,12 @@ function participatory_budget_preprocess_menu(&$variables) {
  */
 function participatory_budget_preprocess_block(&$variables) {
   $variables['content']['#attributes']['block'] = $variables['attributes']['id'];
+
+  switch ($variables['attributes']['id']) {
+  case 'block-participatory-budget-branding':
+    // different content types have different branding blocks
+    // ideally we'd cache per content type, but I wasn't able to figure out how
+    // to make that happen
+    $variables['#cache']['contexts'][] = 'url.path';
+  }
 }
