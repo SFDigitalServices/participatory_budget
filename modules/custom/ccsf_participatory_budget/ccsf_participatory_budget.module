@@ -24,7 +24,9 @@ function ccsf_participatory_budget_theme($existing, $type, $theme, $path) {
 function ccsf_participatory_budget_user_login(\Drupal\user\UserInterface $account) {
   // Default login destination to the dashboard.
   $current_request = \Drupal::service('request_stack')->getCurrentRequest();
-  if (!$current_request->query->get('destination')) {
+  if (!$current_request->query->get('destination') && // tried to access page requiring login
+    !$current_request->query->get('pass-reset-token') // password reset
+  ) {
     $current_request->query->set(
       'destination',
       \Drupal\Core\Url::fromRoute('<front>')->toString()
