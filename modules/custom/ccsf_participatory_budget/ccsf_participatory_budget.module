@@ -24,9 +24,11 @@ function ccsf_participatory_budget_theme($existing, $type, $theme, $path) {
 function ccsf_participatory_budget_user_login(\Drupal\user\UserInterface $account) {
   // Default login destination to the dashboard.
   $current_request = \Drupal::service('request_stack')->getCurrentRequest();
+  \Drupal::logger('ccsf_participatory_budget')->notice("user logging in with destination: " . $current_request->getUri());
   if (!$current_request->query->get('destination') && // tried to access page requiring login
-    !$current_request->query->get('pass-reset-token') // password reset
+    !strpos($current_request->getPathInfo(), 'user/reset') // password reset
   ) {
+    \Drupal::logger('ccsf_participatory_budget')->notice("redirecting login destined for: " . $current_request->getUri());
     $current_request->query->set(
       'destination',
       \Drupal\Core\Url::fromRoute('<front>')->toString()
