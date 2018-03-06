@@ -1,0 +1,6 @@
+services:
+  mymodule.twig.extension:
+    arguments: ['@language_manager', '@url_generator']
+    class: Drupal\ccsf_participatory_budget\TwigExtension
+    tags:
+    - { name: twig.extension }
