@@ -1,0 +1,9 @@
+.webform-details-toggle .form-checkboxes .form-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.webform-details-toggle label.form-required:after {
+  content: " *";
+  color: red;
+}

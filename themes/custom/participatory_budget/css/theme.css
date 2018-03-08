@@ -63,3 +63,12 @@ p.translation, main span.translation {
   display: block;
   padding: 10px 0 5px
 }
+
+/* voting links */
+#vote-arrow {
+  text-align: right;
+}
+
+#vote-links a {
+  font-size: xx-large;
+}

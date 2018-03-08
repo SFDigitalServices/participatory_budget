@@ -1,0 +1,9 @@
+handlers:
+  email_confirmation:
+    settings:
+      from_name: predeterminado
+      subject: predeterminado
+  email_notification:
+    label: 'Aviso por correo electrónico'
+    settings:
+      subject: predeterminado

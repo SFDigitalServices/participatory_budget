@@ -1,0 +1,136 @@
+uuid: f035792a-d526-481f-8aa8-fb934ee5337f
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: district_7_2017
+title: 'District 7 2017'
+description: '2017 ballot for District 7'
+category: ''
+elements: "your_details:\n  '#type': webform_section\n  '#title': 'Voting in District 7'\n  flexbox:\n    '#type': webform_flexbox\n    first_name:\n      '#type': textfield\n      '#title': 'First name'\n      '#wrapper_attributes':\n        class:\n          - form-group\n      '#attributes':\n        class:\n          - form-control\n      '#required': true\n      '#required_error': 'First name is required'\n    last_name:\n      '#type': textfield\n      '#title': 'Last name'\n      '#wrapper_attributes':\n        class:\n          - form-group\n      '#attributes':\n        class:\n          - form-control\n      '#required': true\n      '#required_error': 'Last name is required'\n  flexbox_01:\n    '#type': webform_flexbox\n    address:\n      '#type': textfield\n      '#title': 'Street address'\n      '#wrapper_attributes':\n        class:\n          - form-group\n      '#attributes':\n        class:\n          - form-control\n      '#required': true\n      '#required_error': 'Street address is required'\n    zipcode:\n      '#type': textfield\n      '#title': Zipcode\n      '#wrapper_attributes':\n        class:\n          - form-group\n      '#attributes':\n        class:\n          - form-control\n      '#required': true\n      '#required_error': 'Zipcode is required'\n  email:\n    '#type': email\n    '#title': Email\n    '#states':\n      required:\n        ':input[name=\"yes_please_add_me_to_the_district_7_e_mail_list_for_updates\"]':\n          checked: true\n    '#wrapper_attributes':\n      class:\n        - form-group\n    '#attributes':\n      class:\n        - form-control\n  i_am_16_years_old_or_older:\n    '#type': checkbox\n    '#title': 'I am 16 years old or older'\n    '#required': true\n    '#required_error': 'You are required to be 16 or order to participate in voting'\n  yes_please_add_me_to_the_district_7_e_mail_list_for_updates:\n    '#type': checkbox\n    '#title': 'Yes! Please add me to the District 7 e-mail list for updates'\nprojects:\n  '#type': webform_section\n  '#title': Projects\n  beautification_and_open_space:\n    '#type': checkboxes\n    '#title': 'Beautification and Open Space '\n    '#multiple': 5\n    '#multiple_error': 'Select up to 5 projects from Beautification and Open Space'\n    '#description': 'Choose up to <em>5 projects</em> in this category'\n    '#description_display': before\n    '#options':\n      brotherhood_way: 'Brotherhood Way Permanent Interactive Radar Speed Detection Signs Cost: $80,000 -- This project will provide two interactive radar speed signs along the western portion of Brotherhood Way. One in each direction-where vehicles currently travel above the posted speed limit Over 35,000 vehicles travel along this portion of Brotherhood way daily. This will be an important Vision Zero Traffic Calming measure.'\n      taraval_trafic_calming: 'Traffic Calming on Taraval between 14th & Claremont- Cost: $21,000 -- Taraval between 14th and Claremont (Dewey Circle) is a straight 6-block section that has become a speedway, with no stop signs between 14th & Claremont. Our project proposal is to install speed humps on three (3) blocks along this stretch of Taraval Street as traffic calming devices to reduce the high speeds of vehicles traversing this section of east/west roadway. The Vision Zero High Injury Network includes Taraval west from Funston; this proposal fits well with the Vision Zero goal of preventing pedestrian and bicycle injuries and fatalities.'\n      pedestrian_safety_portola: 'Improving Pedestrian Safety at the Intersection off Portola Drive- Cost: $50,000 -- A channelization island, already approved by the SFMTA in 2009, but not yet funded. The proposed island, at the confusing intersection of Santa Ana, San Anselmo and 14th Avenue off Portola Drive, would clarify the right of way for pedestrians and drivers, so that pedestrians could confidently use the cross walks at this intersection, slow traffic and improve pedestrian safety.'\n      pedestrian_safety_panorama: 'Pedestrian Safety Enhancements near Panorama & Twin Peaks Blvd Cost: $25,000 -- This project would fund a traffic study in the area near the intersection of Panorama Drive and Twin Peaks Blvd (including the nearby area where pedestrian and automobile traffic enters Panorama from Midcrest Way) with a view to determining the most effective measures that could be taken to enhance the safe interaction of automobile traffic with pedestrians crossing Panorama in those areas. The project would include implementation of any relatively low cost measures that would improve the situation and cost projections for any more expensive changes that might require future budgeting.'\n      pedestrian_safety_sunnyside: 'Pedestrian Safety Improvements for Sunnyside Streets- Cost: $120,000 -- These proposed pedestrian safety improvements, including strategic stop signs, marked crosswalks, and other measures to promote visibility, directly address specific danger spots in Sunnyside and will substantially increase the pedestrian safety. These improvements were assembled with the input of local residents and the Sunnyside Neighborhood Association.'\n      traffic_calming_myra_way: 'Traffic Calming Measures for Myra Way- Cost: -- Myra Way is a narrow thoroughfare around the south side of Mt. Davidson. It is part of the MUNI Bus #36 route. Situated on this road is Miraloma Elementary School. The neighborhood has families with children and seniors. It is also frequented by dog walkers and hikers headed to Mt. Davidson. From Molimo Dr. to Reposa Way, there is little to deter cars from speeding through the neighborhood. We are in need of better traffic-calming measures for Myra Way. Please support the installation of speed cushions to reduce vehicular speeds to a safe level for the neighborhood and its visitors.'\n      traffic_calming_melrose: 'Melrose Avenue Traffic Calming – Cost: -- This project would install a two mid-block speed humps on Melrose Avenue between Gennessee Street and Mangels Avenue, where vehicles often travel well beyond the 25 mile per hour speed limit. This street is long and relatively flat, which allows drivers to build up speed, and has a bend with obscured visibility. This project would benefit residents in Sunnyside, Westwood Highlands, and Miraloma Park, especially the elderly and young children. It would also benefit all pedestrians (walkers, joggers,dog walkers), especially those who may not have access to a vehicle and walk to and from the bus stops along Monterey Blvd.'\n  culture:\n    '#type': checkboxes\n    '#title': Culture\n    '#multiple': 4\n    '#multiple_error': 'Select up to 4 projects from Culture'\n    '#description': 'Choose up to <em>4 projects</em> in this category'\n    '#description_display': before\n    '#options':\n      unity_plaza: 'Unity Plaza Events – Cost: $25,000 -- Activity Unity Plaza with events where neighborhood residents and visitors can shop, eat, listen to music and dance. Events will be in partnership with community groups including City College of San Francisco, Urban Air Market, Popupsters, Farmer’s Market organizers, and music event producers. By holding regular outdoor events, Ocean Avenue will be a more lively and active place for all.'\n      mural_restoration: 'Mural Restoration Grant – Cost: $25,000 -- This funding would be designated for a San Francisco historical landmark Mural Restoration Project in District 7 community center(s). Restoration funds would be targeted to preserving culturally significant murals displayed within the district for years to come.'\n      midtown_terrace: 'Midtown Terrace Beautification Project – Cost: $25,000 -- Nestled in the hills between Sutro Tower and Laguna Honda Hospital is a wonderful neighborhood called Midtown Terrace. The front neighborhood entrance consists of Midtown Terrace Park. With only two true entrances, Midtown Terrace is often overlooked. The neighborhood residents have long wanted the neighborhood entrance to be recognized. This beautiful stone wall will feature the MIDTOWN TERRACE name at the front of the neighborhood. The proposed wall will serve as an architectural landmark for the 820 homes in Midtown Terrace and eventually become a landmark to surrounding neighborhoods.'\n      ocean_view_mural: 'The Ocean View-Merced Heights-Ingleside Historical Mural Cost: $25,000 -- The current mural on Ocean and Junipero Serra on the PG&E is in need of restoration to bring back its artistic beauty by brightening the street and forming a gateway to Ocean Avenue businesses and community. The completion of this historical landmark and bringing it back to its initial beauty will be a great investment and important civic asset.'\n      laguna_hospital: 'Laguna Honda Hospital Community Moral Project: Nature & the City Cost: $25,000 -- The dark green wall separating Laguna Honda Hospital from Laguna Honda Boulevard and Forest Hill Station has been transformed by a 200-foot colorful mural by Precita Eyes Muralists, which celebrates the neighborhood and the hospital''s 150 years in the city. This project asks for funding to complete an additional 200 feet of the mural on the right of the entrance ending at Woodside Avenue. The mural will depict various native birds flying towards the city symbolizing civil migration and diversity towards San Francisco. The mural will create an attractive gateway into the neighborhood and inviting entrance into the hospital.'\n  neighborhood_services:\n    '#type': checkboxes\n    '#title': 'Neighborhood Services'\n    '#multiple': 4\n    '#multiple_error': 'Select up to 4 projects from Neighborhood Services'\n    '#description': 'Choose up to <em>4 projects</em> in this category'\n    '#description_display': before\n    '#options':\n      clarendon_ave_greening: 'Clarendon Ave Greening – Cost: $25,000 -- Make Clarendon Avenue nicer and safer for public school students and community residents with median greening from Panorama Drive to Olympia Way, designed to provide a better barrier and encourage pedestrians to use the crosswalk or footbridge.'\n      merced_extension: 'Merced Extension Triangle Neighborhood-Community Connectors Aging in Place Program – Cost: $25,000 -- Isolation puts aging adults at risk. Without a community center or library, this aging-in-place model will help us build pathways for aging residents to make connections, avoid isolation and stay in their homes longer. The program provides a supportive safety net, a place to socialize, exercise, and attend educational lectures such as: nutrition, computers, bone health, fall prevention, hearing and vision. Our isolated neighbors need ways to develop new friendships, find meaningful engagement, share experiences and continue to contribute and participate in our community. This program will meet the needs of our seniors and strengthen our entire community.'\n      miraloma_park_community_connectors: 'Miraloma Park Community Connectors – Cost: $25,000 -- Miraloma Park does not have a senior or community center. This aging in place model encourages neighbors to help each other, reduce older adult isolation, promote socialization, and offer programs and activities needed to ensure that neighbors stay active, engaged and in their homes for as long as possible. The program is 10-15 hours a week; a neighborhood resident coordinates exercise and other social and educational programs. Studies show that isolation leads to poor health; but the reverse is also true: remaining connected with others, learning new things, and having a sense of purpose all improve well-being and increase longevity.'\n      miraloma_park_disaster_preparedness: 'Miraloma Park’s Disaster Preparedness Program: One Block at a Time – Cost: $20,000 -- One Block at a Time will improve disaster readiness at the block level by: training at least 50 new block captains/champions; Identifying the elderly, the disabled, and families with young children on the block; purchasing and distributing at least 50 emergency supply bins to block captains/champions and block gathering sites for comfort and care; and, Training neighbors in First Aid in order to better support gathering sites for comfort and care and comfort.'\n      neighborhood_crime_prevention: 'Neighborhood Crime Prevention – Cost: $25,000 -- This innovative crime reduction program would help District 7 neighbors acquire surveillance cameras, and other technology/ increased signage to track stolen goods/vehicles and deter crime. San Francisco suffers the highest rate of property crimes of any major city in America, with 25,000 auto burglaries in 2015 alone, plus thousands of package delivery and home burglaries. All District 7 neighborhoods and merchant areas have been impacted. Yet proven crime prevention methods can make a real impact. Similar programs in 30 countries have reportedly reduced crime by up to 50%.'\n      monterey_gennessee_parklet: 'Monterey & Gennessee Parklet Project – Cost: $20,000 -- To install parklet on Monterey at Gennessee Boulevard. Parklet will enhance beautification and unify neighborhood, as well as provide Muni riders a safe place to board bus.'\n  school_education_youth:\n    '#type': checkboxes\n    '#title': 'School, Education, & Youth'\n    '#multiple': 2\n    '#multiple_error': 'Select up to 2 projects from School, Education, & Youth'\n    '#description': 'Choose up to <em>2 projects</em> from this category'\n    '#description_display': before\n    '#options':\n      family_teen_center: 'Family Teen Center in Lakeside Neighborhood – Cost: $25,000 -- From the ages of 13-18, teens are experiencing a world of change. We can help support and guide this process for them by creating a safe and consistent space for them to do more than just “hang out.” The vision of the Family Teen Center is to have a space free from judgment and prejudice where individuals can express themselves and learn with others. The teen center will prepare teens to be productive community members and support them through their transition to adulthood.'\n      commodore_sloat_playground: 'New Play Structure at Commodore Sloat Community Playground/Shared Schoolyard – Cost: $25,000 -- Commodore Sloat Community Playground/Shared Schoolyard needs a new play structure to replace the one removed last year for safety reasons. We have received a donated play structure, but have to raise the funds for installation of the structure and of required surface safety tiles. Near the newly renovated basketball courts on the lower yard, the project will directly benefit the students of Commodore Sloat School, and the play structure will be available to families of the surrounding neighborhoods during weekends.'\n      ocean_ave_community_youth: 'Ocean Avenue Community Youth-Driven Utility Box Mural Arts Project Cost: $18,170 -- District 7 Participatory Budgeting funds will be used to support a community youth-driven utility box mural arts project for a collaborative community arts project to create small scale murals on utility boxes along Ocean Avenue and neighboring streets. Artists in printmaking and photography will work with public high school students, primarily low income youth and youth of color, to develop community-driven digital print installations on the utility boxes which will allow youth to publicly showcase their voices in the city and to engage community members with the arts where they live.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Vote!\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_login: false
+  form_login_message: ''
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  submission_login: false
+  submission_login_message: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }

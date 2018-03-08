@@ -6,6 +6,7 @@ global-styling:
     component:
       css/components/header.css: {}
       css/components/menu.css: {}
+      css/components/webform.css: {}
       css/components/footer.css: {}
     theme:
       css/theme.css: {}

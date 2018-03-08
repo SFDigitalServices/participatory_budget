@@ -1,0 +1,5 @@
+handlers:
+  email_notification:
+    settings:
+      subject: predeterminado
+      body: predeterminado

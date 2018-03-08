@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.district_voting_page.field_content
+    - field.field.node.district_voting_page.field_district
+    - field.field.node.district_voting_page.field_image
     - node.type.district_voting_page
   module:
     - user
@@ -19,3 +22,4 @@ hidden:
   field_content: true
   field_district: true
   field_image: true
+  langcode: true

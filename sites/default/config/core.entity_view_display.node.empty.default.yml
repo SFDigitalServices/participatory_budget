@@ -12,4 +12,5 @@ bundle: empty
 mode: default
 content: {  }
 hidden:
+  langcode: true
   links: true

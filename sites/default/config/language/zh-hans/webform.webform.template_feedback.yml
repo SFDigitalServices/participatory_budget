@@ -1,0 +1,9 @@
+handlers:
+  email_confirmation:
+    settings:
+      from_name: 默认
+      subject: 默认
+  email_notification:
+    label: 电子邮件通知
+    settings:
+      subject: 默认

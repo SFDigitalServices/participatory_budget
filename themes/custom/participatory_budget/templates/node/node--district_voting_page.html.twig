@@ -1,6 +1,33 @@
-<div class="col-md-6">
-  {{ content.field_content }}
+<div{{ attributes.addClass('fluid-container invert') }}>
+  <div{{ attributes.addClass('container') }}>
+    <div class="col-md-6">
+      {{ content.field_content }}
+    </div>
+    <div class="col-md-6">
+      {{ content.field_image }}
+    </div>
+  </div>
 </div>
-<div class="col-md-6">
-  {{ content.field_image }}
+<div class='container'>
+	{# TODO figure out how to show conditional messaging based on webform status (https://drupal.stackexchange.com/questions/257350/accessing-webform-status-via-reference) #}
+  {% if content.field_ballot[0] %}
+    <div id="vote-arrow" class="col-md-6">
+      <img src="/{{ directory }}/img/vote-arrow.png" alt="Vote arrow">
+    </div>
+    <div id="vote-links" class="vote-links col-md-6">
+      <ul class="list-unstyled">
+        <li>
+          <a href="{{ path_lang("entity.webform.canonical", {'webform':  content.field_ballot[0]['#webform_id']}, {}, 'en')}}">Vote</a>
+        </li>
+        <li>
+          <a href="{{ path_lang("entity.webform.canonical", {'webform':  content.field_ballot[0]['#webform_id']}, {}, 'es')}}">Votar</a>
+        </li>
+        <li>
+          <a href="{{ path_lang("entity.webform.canonical", {'webform':  content.field_ballot[0]['#webform_id']}, {}, 'zh-hans')}}"> 投 票</a>
+        </li>
+      </ul>
+    </div>
+  {% else %}
+    <h2 class="text-center">Voting is closed</h2>
+  {% endif %}
 </div>

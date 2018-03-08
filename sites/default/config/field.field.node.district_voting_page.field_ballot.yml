@@ -1,0 +1,29 @@
+uuid: ae662b2e-02d7-43d6-a3f9-e85cbd353b38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ballot
+    - node.type.district_voting_page
+  module:
+    - webform
+id: node.district_voting_page.field_ballot
+field_name: field_ballot
+entity_type: node
+bundle: district_voting_page
+label: ballot
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

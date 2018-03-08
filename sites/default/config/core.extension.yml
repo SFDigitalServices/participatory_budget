@@ -11,6 +11,7 @@ module:
   ccsf_participatory_budget: 0
   ckeditor: 0
   config: 0
+  config_translation: 0
   ctools: 0
   datetime: 0
   datetime_range: 0
@@ -26,7 +27,9 @@ module:
   help: 0
   image: 0
   kint: 0
+  language: 0
   link: 0
+  locale: 0
   menu_ui: 0
   node: 0
   options: 0
@@ -38,8 +41,16 @@ module:
   token: 0
   toolbar: 0
   user: 0
+  webform: 0
+  webform_devel: 0
+  webform_node: 0
+  webform_templates: 0
+  webform_ui: 0
+  contribute: 1
   menu_link_content: 1
   pathauto: 1
+  webform_bootstrap: 1
+  views: 10
   minimal: 1000
 theme:
   stark: 0
