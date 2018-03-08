@@ -83,3 +83,20 @@ function participatory_budget_preprocess_block(&$variables) {
     $variables['#cache']['contexts'][] = 'url.path';
   }
 }
+
+function participatory_budget_preprocess_node(&$variables) {
+  $node = $variables['node'];
+
+  // Create preprocess functions per content type.
+  $function = __FUNCTION__ . '_' . $node->getType();
+  if (function_exists($function)) {
+    $function($variables);
+  }
+}
+
+function participatory_budget_preprocess_node_district_voting_page(&$variables) {
+  $variables['ballot_open'] = false;
+  if ($ballot = $variables['node']->get('field_ballot')->entity) {
+    $variables['ballot_open'] = $ballot->isOpen();
+  }
+}

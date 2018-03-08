@@ -9,8 +9,7 @@
   </div>
 </div>
 <div class='container'>
-	{# TODO figure out how to show conditional messaging based on webform status (https://drupal.stackexchange.com/questions/257350/accessing-webform-status-via-reference) #}
-  {% if content.field_ballot[0] %}
+  {% if ballot_open %}
     <div id="vote-arrow" class="col-md-6">
       <img src="/{{ directory }}/img/vote-arrow.png" alt="Vote arrow">
     </div>
