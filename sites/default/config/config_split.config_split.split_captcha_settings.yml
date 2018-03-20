@@ -1,0 +1,15 @@
+uuid: 2fff27cd-3ef8-492f-b1f8-dcdcdc7453ef
+langcode: en
+status: true
+dependencies: {  }
+id: split_captcha_settings
+label: 'Split Captcha Settings'
+folder: ''
+module: {  }
+theme: {  }
+blacklist:
+  - recaptcha.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
