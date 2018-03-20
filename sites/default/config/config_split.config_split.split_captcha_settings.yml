@@ -7,9 +7,9 @@ label: 'Split Captcha Settings'
 folder: ''
 module: {  }
 theme: {  }
-blacklist:
+blacklist: {  }
+graylist:
   - recaptcha.settings
-graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
