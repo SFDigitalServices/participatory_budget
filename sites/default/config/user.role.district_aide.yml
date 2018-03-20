@@ -49,7 +49,6 @@ permissions:
   - 'revert district_landing_page revisions'
   - 'revert district_voting_page revisions'
   - 'revert webform revisions'
-  - 'skip CAPTCHA'
   - 'view all district revisions'
   - 'view any webform submission'
   - 'view district_landing_page revisions'

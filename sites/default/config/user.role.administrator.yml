@@ -102,7 +102,6 @@ permissions:
   - 'role-assign users by role'
   - 'role-assign users with role administrator'
   - 'select account cancellation method'
-  - 'skip CAPTCHA'
   - 'switch users'
   - 'synchronize configuration'
   - 'translate configuration'
