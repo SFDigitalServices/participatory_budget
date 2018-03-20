@@ -63,6 +63,7 @@ permissions:
   - 'role-assign users by role'
   - 'role-assign users with role controller_staff'
   - 'role-assign users with role district_aide'
+  - 'skip CAPTCHA'
   - 'view all district revisions'
   - 'view any webform submission'
   - 'view district_landing_page revisions'
