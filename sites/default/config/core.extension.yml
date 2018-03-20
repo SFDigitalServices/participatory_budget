@@ -7,6 +7,7 @@ module:
   auto_entitylabel: 0
   block: 0
   breakpoint: 0
+  captcha: 0
   ccsf_district: 0
   ccsf_participatory_budget: 0
   ckeditor: 0
@@ -26,6 +27,7 @@ module:
   filter: 0
   help: 0
   image: 0
+  image_captcha: 0
   kint: 0
   language: 0
   link: 0
@@ -35,6 +37,7 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  recaptcha: 0
   system: 0
   telephone: 0
   text: 0
