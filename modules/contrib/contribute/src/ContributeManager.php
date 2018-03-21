@@ -6,7 +6,6 @@ use Drupal\Component\Serialization\Json;
 use Drupal\Core\Cache\CacheBackendInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Datetime\DateFormatterInterface;
-use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Core\Url;
 use GuzzleHttp\ClientInterface;
@@ -73,13 +72,6 @@ class ContributeManager implements ContributeManagerInterface {
    * @var array
    */
   protected $cachedData = [];
-
-  /**
-   * Cache people.
-   *
-   * @var array
-   */
-  protected $cachedPeople = [];
 
   /**
    * Constructs a new ContributeManager object.
@@ -176,18 +168,12 @@ class ContributeManager implements ContributeManagerInterface {
         '#suffix' => '</strong>',
       ];
       if (!empty($account['organizations'])) {
-        $account['value']['organizations'] = [
-          '#prefix' => ' @ ',
-          '#plain_text' => implode('; ', $account['organizations']),
-        ];
+        $account['value']['organizations'] = ['#prefix' => ' @ ', '#markup' => implode('; ', $account['organizations'])];
       }
       $t_args = [
         '@date' => $this->dateFormatter->formatTimeDiffSince($account['created']),
       ];
-      $account['value']['drupal'] = [
-        '#prefix' => '<br/>',
-        '#markup' => $this->t('On Drupal.org for @date', $t_args),
-      ];
+      $account['value']['drupal'] = ['#prefix' => '<br/>', '#markup' => $this->t('On Drupal.org for @date', $t_args)];
       $account['description']['link'] = [
         '#type' => 'link',
         '#title' => $this->t('Configure'),
@@ -202,25 +188,15 @@ class ContributeManager implements ContributeManagerInterface {
         ':href_jobs' => 'https://jobs.drupal.org',
         ':href_association' => 'https://www.drupal.org/association',
       ];
-      $account['value'] = [
-        '#markup' => $this->t('When you <a href=":href_register">create a Drupal.org account</a>, you gain access to a whole ecosystem of Drupal.org sites and services.', $t_args) .
+      $account['value'] = ['#markup' => $this->t('When you <a href=":href_register">create a Drupal.org account</a>, you gain access to a whole ecosystem of Drupal.org sites and services.', $t_args) .
         ' ' .
-        $this->t('Your account works on Drupal.org and any of its subsites including <a href=":href_ groups">Drupal Groups</a>, <a href=":href_jobs">Drupal Jobs</a>, <a href=":href_association">Drupal Association</a> and more.', $t_args),
+        $this->t('Your account works on Drupal.org and any of its subsites including <a href=":href_ groups">Drupal Groups</a>, <a href=":href_jobs">Drupal Jobs</a>, <a href=":href_association">Drupal Association</a> and more.', $t_args)
       ];
       $account['description'] = [
         '#type' => 'link',
         '#title' => $this->t('Configure'),
         '#url' => Url::fromRoute('contribute.settings'),
-        '#attributes' => $configure_attributes +
-        [
-          'class' => [
-            'use-ajax',
-            'button',
-            'button--small',
-            'button--primary',
-            'contribute-status-report-community-info__button',
-          ],
-        ],
+        '#attributes' => $configure_attributes + ['class' => ['use-ajax', 'button', 'button--small', 'button--primary', 'system-status-contribute-info__button']],
       ];
     }
 
@@ -255,7 +231,7 @@ class ContributeManager implements ContributeManagerInterface {
           if ($badge = $this->getOrganizationBadge()) {
             $membership = [
               'status' => TRUE,
-              'badge' => $badge,
+              'badge' => $badge ,
             ];
           }
           break;
@@ -289,14 +265,7 @@ class ContributeManager implements ContributeManagerInterface {
             '#type' => 'link',
             '#title' => $this->t('Become an organization member'),
             '#url' => Url::fromUri('https://www.drupal.org/association/organization-membership'),
-            '#attributes' => [
-              'class' => [
-                'button',
-                'button--small',
-                'button--primary',
-                'contribute-status-report-community-info__button',
-              ],
-            ],
+            '#attributes' => ['class' => ['button', 'button--small', 'button--primary', 'system-status-contribute-info__button']],
           ];
           break;
 
@@ -307,14 +276,7 @@ class ContributeManager implements ContributeManagerInterface {
             '#type' => 'link',
             '#title' => $this->t('Become an individual member'),
             '#url' => Url::fromUri('https://www.drupal.org/association/individual-membership'),
-            '#attributes' => [
-              'class' => [
-                'button',
-                'button--small',
-                'button--primary',
-                'contribute-status-report-community-info__button',
-              ],
-            ],
+            '#attributes' => ['class' => ['button', 'button--small', 'button--primary', 'system-status-contribute-info__button']],
           ];
           break;
 
@@ -324,16 +286,11 @@ class ContributeManager implements ContributeManagerInterface {
             '#type' => 'link',
             '#title' => $this->t('Support our work'),
             '#url' => Url::fromUri('https://www.drupal.org/association/support'),
-            '#attributes' => [
-              'class' => [
-                'button',
-                'button--small',
-                'contribute-status-report-community-info__button',
-              ],
-            ],
+            '#attributes' => ['class' => ['button', 'button--small', 'system-status-contribute-info__button']],
           ];
           break;
       }
+
     }
 
     // Cache membership information.
@@ -341,7 +298,6 @@ class ContributeManager implements ContributeManagerInterface {
 
     return $membership;
   }
-
 
   /**
    * {@inheritdoc}
@@ -356,7 +312,6 @@ class ContributeManager implements ContributeManagerInterface {
       return $cache->data;
     }
 
-    $contribution = [];
     $contribution['status'] = FALSE;
     if ($account_id != 'anonymous') {
       switch ($account_type) {
@@ -384,13 +339,7 @@ class ContributeManager implements ContributeManagerInterface {
         '#type' => 'link',
         '#title' => $this->t('Ways to get involved'),
         '#url' => Url::fromUri('https://www.drupal.org/contribute'),
-        '#attributes' => [
-          'class' => [
-            'button',
-            'button--small',
-            'contribute-status-report-community-info__button',
-          ],
-        ],
+        '#attributes' => ['class' => ['button', 'button--small', 'system-status-contribute-info__button']],
       ];
       if ($account_type) {
         $contribution['description']['#attributes']['class'][] = 'button--primary';
@@ -437,24 +386,6 @@ class ContributeManager implements ContributeManagerInterface {
   public function setAccountId($account_id) {
     $this->accountId = $account_id;
   }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getPerson($type) {
-    if (isset($this->cachedPeople[$type])) {
-      return $this->cachedPeople[$type];
-    }
-
-    $people = $this->getPeople($type);
-    $person = $people[array_rand($people)];
-
-    $this->cachedPeople[$type] = $person;
-
-    return $person;
-  }
-
-  /****************************************************************************/
 
   /**
    * Get data from remote server.
@@ -518,26 +449,13 @@ class ContributeManager implements ContributeManagerInterface {
     }
   }
 
-  /**
-   * Get a user account's badge from Drupal.org.
-   *
-   * @return string
-   *   A user account's badge from Drupal.org.
-   */
   protected function getUserBadge() {
     $account_id = $this->getAccountId();
     $body = $this->get('https://www.drupal.org/u/' . urlencode($account_id));
     if (strpos($body, 'association_ind_member_badge.svg') !== FALSE) {
       return 'https://www.drupal.org/sites/all/modules/drupalorg/drupalorg/images/association_ind_member_badge.svg';
     }
-    elseif (strpos($body, 'association_org_member_badge.svg') !== FALSE) {
-      return 'https://www.drupal.org/sites/all/modules/drupalorg/drupalorg/images/association_org_member_badge.svg';
-    }
-    else {
-      return NULL;
-    }
   }
-
   /**
    * An organization's information from Drupal.org.
    *

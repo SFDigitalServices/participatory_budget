@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\auto_entitylabel\Routing\RouteEnhancer.
- */
-
 namespace Drupal\auto_entitylabel\Routing;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -13,7 +8,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Route;
 
 /**
- * Enhances Auto Entity Label routes by adding proper information about the bundle name.
+ * RouteEnhancer Class.
+ *
+ * Enhances Auto Entity Label routes by adding proper information about the
+ * bundle name.
  */
 class RouteEnhancer implements RouteEnhancerInterface {
 
@@ -39,9 +37,9 @@ class RouteEnhancer implements RouteEnhancerInterface {
    */
   public function enhance(array $defaults, Request $request) {
     if (($bundle = $this->entityManager->getDefinition($defaults['entity_type_id'])->getBundleEntityType()) && isset($defaults[$bundle])) {
-      // Auto Entity Label forms only need the actual name of the bundle they're dealing
-      // with, not an upcasted entity object, so provide a simple way for them
-      // to get it.
+      // Auto Entity Label forms only need the actual name of the bundle they're
+      // dealing with, not an upcasted entity object, so provide a simple way
+      // for them to get it.
       $defaults['bundle'] = $defaults['_raw_variables']->get($bundle);
     }
 

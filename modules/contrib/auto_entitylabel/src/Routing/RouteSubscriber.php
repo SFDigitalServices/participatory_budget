@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\auto_entitylabel\Routing\RouteSubscriber.
- */
-
 namespace Drupal\auto_entitylabel\Routing;
 
 use Drupal\Core\Entity\EntityTypeInterface;
@@ -20,7 +15,7 @@ use Symfony\Component\Routing\RouteCollection;
 class RouteSubscriber extends RouteSubscriberBase {
 
   /**
-   * The entity type manager
+   * The entity type manager.
    *
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface
    */
@@ -81,7 +76,7 @@ class RouteSubscriber extends RouteSubscriberBase {
    */
   public static function getSubscribedEvents() {
     $events = parent::getSubscribedEvents();
-    $events[RoutingEvents::ALTER] = array('onAlterRoutes', -100);
+    $events[RoutingEvents::ALTER] = ['onAlterRoutes', -100];
     return $events;
   }
 

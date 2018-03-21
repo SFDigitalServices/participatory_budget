@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\auto_entitylabel\EntityDecorator.
- */
-
 namespace Drupal\auto_entitylabel;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
@@ -20,7 +15,7 @@ class EntityDecorator implements EntityDecoratorInterface {
   /**
    * The content entity that is decorated.
    *
-   * @var ContentEntityInterface
+   * @var \Drupal\Core\Entity\ContentEntityInterface
    */
   protected $entity;
 
@@ -58,7 +53,7 @@ class EntityDecorator implements EntityDecoratorInterface {
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   Configuration factory.
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
-   *   Entity type manager
+   *   Entity type manager.
    * @param \Drupal\Core\Utility\Token $token
    *   Token manager.
    */
@@ -75,4 +70,5 @@ class EntityDecorator implements EntityDecoratorInterface {
     $this->entity = new AutoEntityLabelManager($entity, $this->configFactory, $this->entityTypeManager, $this->token);
     return $this->entity;
   }
+
 }

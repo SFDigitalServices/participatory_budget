@@ -1,8 +1,4 @@
 <?php
-/**
- * @file
- * Contains \Drupal\auto_entitylabel\EntityDecoratorInterface.
- */
 
 namespace Drupal\auto_entitylabel;
 
@@ -17,8 +13,11 @@ interface EntityDecoratorInterface {
    * Automatic entity label entity decorator.
    *
    * @param \Drupal\Core\Entity\ContentEntityInterface $entity
+   *   Entity.
    *
    * @return \Drupal\auto_entitylabel\AutoEntityLabelManager|\Drupal\Core\Entity\ContentEntityInterface
+   *   Return Content Entity Interface.
    */
   public function decorate(ContentEntityInterface $entity);
+
 }

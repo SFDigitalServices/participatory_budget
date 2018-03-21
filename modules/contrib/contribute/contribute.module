@@ -33,6 +33,7 @@ function contribute_page_attachments(&$page) {
     $url = base_path() . drupal_get_path('module', 'contribute') . '/images/icons/drupal.svg';
     $value .= '#contribute-info-contribution:before {background-image: url(' . $url . ')}';
   }
+
   $page['#attached']['html_head'][] = [
     [
       '#type' => 'html_tag',
@@ -48,7 +49,7 @@ function contribute_page_attachments(&$page) {
  */
 function contribute_theme() {
   return [
-    'contribute_status_report_community_info' => [
+    'status_report_contribute_info' => [
       'variables' => [
         'account' => [],
         'membership' => [],
@@ -70,7 +71,7 @@ function contribute_preprocess_status_report_page(&$variables) {
   if ($contribute_manager->getStatus()) {
     $variables['general_info'] = [
       'contribute_info' => [
-        '#theme' => 'contribute_status_report_community_info',
+        '#theme' => 'status_report_contribute_info',
         '#account' => $contribute_manager->getAccount(),
         '#membership' => $contribute_manager->getMembership(),
         '#contribution' => $contribute_manager->getContribution(),

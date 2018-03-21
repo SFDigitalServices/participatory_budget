@@ -13,6 +13,7 @@ use Symfony\Component\Validator\Constraint;
  * validate before the automatic label is set.
  */
 class EntityLabelNotNullConstraintValidator extends NotNullConstraintValidator {
+
   /**
    * {@inheritdoc}
    */
@@ -30,4 +31,5 @@ class EntityLabelNotNullConstraintValidator extends NotNullConstraintValidator {
     }
     parent::validate($value, $constraint);
   }
+
 }
