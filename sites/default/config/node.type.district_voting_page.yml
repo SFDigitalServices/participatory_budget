@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: 'District Voting Page'
 type: district_voting_page
-description: 'Voting page for district.'
+description: 'Voting information page for district.'
 help: ''
 new_revision: true
 preview_mode: 1

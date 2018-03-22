@@ -95,8 +95,29 @@ function participatory_budget_preprocess_node(&$variables) {
 }
 
 function participatory_budget_preprocess_node_district_voting_page(&$variables) {
+  $variables['ballot_page_node_id'] = false;
   $variables['ballot_open'] = false;
-  if ($ballot = $variables['node']->get('field_ballot')->entity) {
+
+  $node = \Drupal::routeMatch()->getParameter('node');
+  $district_number = $node->get('field_district')->entity->get('field_district_number')->value;
+
+  $query = \Drupal::entityQuery('node')
+    ->condition('type', 'district_ballot_page')
+    ->condition('field_district.entity.field_district_number', $district_number);
+
+  $nids = $query->execute();
+  if (!$nids) {
+    return;
+  }
+
+  $node = \Drupal\node\Entity\Node::load(reset($nids));
+  if (!$node) {
+    return;
+  }
+
+  $variables['ballot_page_node_id'] = $node->id();
+
+  if ($ballot = $node->get('field_ballot')->entity) {
     $variables['ballot_open'] = $ballot->isOpen();
   }
 }

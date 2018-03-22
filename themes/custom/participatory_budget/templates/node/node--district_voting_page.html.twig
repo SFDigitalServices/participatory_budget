@@ -16,13 +16,13 @@
     <div id="vote-links" class="vote-links col-md-6">
       <ul class="list-unstyled">
         <li>
-          <a href="{{ path_lang("entity.webform.canonical", {'webform':  content.field_ballot[0]['#webform_id']}, {}, 'en')}}">Vote</a>
+          <a href="{{ path_lang("entity.node.canonical", {'node':  ballot_page_node_id}, {}, 'en')}}">Vote</a>
         </li>
         <li>
-          <a href="{{ path_lang("entity.webform.canonical", {'webform':  content.field_ballot[0]['#webform_id']}, {}, 'es')}}">Votar</a>
+          <a href="{{ path_lang("entity.node.canonical", {'node':  ballot_page_node_id}, {}, 'es')}}">Votar</a>
         </li>
         <li>
-          <a href="{{ path_lang("entity.webform.canonical", {'webform':  content.field_ballot[0]['#webform_id']}, {}, 'zh-hans')}}"> 投 票</a>
+          <a href="{{ path_lang("entity.node.canonical", {'node':  ballot_page_node_id}, {}, 'zh-hans')}}"> 投 票</a>
         </li>
       </ul>
     </div>

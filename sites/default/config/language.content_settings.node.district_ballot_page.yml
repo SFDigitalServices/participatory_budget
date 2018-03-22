@@ -1,0 +1,11 @@
+uuid: a0d05db7-e439-4afb-bfd4-f313464a9a1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.district_ballot_page
+id: node.district_ballot_page
+target_entity_type_id: node
+target_bundle: district_ballot_page
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,26 @@
+uuid: 757b4e7d-faf8-46e6-8e67-f81f9ca2995d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_district
+    - node.type.district_ballot_page
+id: node.district_ballot_page.field_district
+field_name: field_district
+entity_type: node
+bundle: district_ballot_page
+label: District
+description: 'The district associated with this ballot page'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:district'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: field_district_number
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

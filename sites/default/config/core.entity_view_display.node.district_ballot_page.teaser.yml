@@ -1,0 +1,19 @@
+uuid: 9ade98c5-a79b-42e4-b579-bbbaa3efb8f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.district_ballot_page
+  module:
+    - user
+id: node.district_ballot_page.teaser
+targetEntityType: node
+bundle: district_ballot_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

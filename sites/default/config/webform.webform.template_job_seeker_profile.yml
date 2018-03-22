@@ -1,12 +1,9 @@
-uuid: c04b0ca4-4c89-4103-b71b-993bed9ceaf7
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
-_core:
-  default_config_hash: h-s7jixtsjBiazFfQN73hQGkeProkPnRfa3kgxDNIIM
 open: null
 close: null
 uid: null
@@ -39,6 +36,7 @@ settings:
   form_reset: false
   form_disable_autocomplete: false
   form_novalidate: false
+  form_disable_inline_errors: false
   form_required: false
   form_unsaved: false
   form_disable_back: false
@@ -138,6 +136,10 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   email_notification:
     id: email
@@ -171,3 +173,6 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+uuid: c04b0ca4-4c89-4103-b71b-993bed9ceaf7
+_core:
+  default_config_hash: h-s7jixtsjBiazFfQN73hQGkeProkPnRfa3kgxDNIIM

@@ -1,0 +1,6 @@
+status: '1'
+pattern: 'District [node:field_district:entity:field_district_number] Voting Page'
+php: 0
+dependencies:
+  config:
+    - node.type.district_voting_page

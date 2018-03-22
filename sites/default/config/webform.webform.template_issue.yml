@@ -1,12 +1,9 @@
-uuid: 24168dd2-cb6a-4fe6-9e00-c36e757d6190
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
-_core:
-  default_config_hash: CmIL_VcOlL1A50iGMJwVfEjRsn40TbOORCPYN3kR7zU
 open: null
 close: null
 uid: null
@@ -39,6 +36,7 @@ settings:
   form_reset: false
   form_disable_autocomplete: false
   form_novalidate: false
+  form_disable_inline_errors: false
   form_required: false
   form_unsaved: false
   form_disable_back: false
@@ -138,4 +136,11 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers: {  }
+uuid: 24168dd2-cb6a-4fe6-9e00-c36e757d6190
+_core:
+  default_config_hash: CmIL_VcOlL1A50iGMJwVfEjRsn40TbOORCPYN3kR7zU

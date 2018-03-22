@@ -1,0 +1,11 @@
+uuid: 1781c533-c21f-46ba-8857-3183786d950f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.district_voting_page
+id: node.district_voting_page
+target_entity_type_id: node
+target_bundle: district_voting_page
+default_langcode: site_default
+language_alterable: false

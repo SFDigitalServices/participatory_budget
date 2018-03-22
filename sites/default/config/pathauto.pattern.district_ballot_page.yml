@@ -1,0 +1,22 @@
+uuid: 877a453e-e9be-484b-9eea-1f59f71c2611
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: district_ballot_page
+label: 'District Ballot Page'
+type: 'canonical_entities:node'
+pattern: '/district/[node:field_district:entity:field_district_number]/ballot'
+selection_criteria:
+  9fe07709-cb7f-4b60-90fa-8f06380eb687:
+    id: node_type
+    bundles:
+      district_ballot_page: district_ballot_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9fe07709-cb7f-4b60-90fa-8f06380eb687
+selection_logic: and
+weight: -5
+relationships: {  }

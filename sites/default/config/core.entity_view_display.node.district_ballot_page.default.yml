@@ -1,0 +1,32 @@
+uuid: 5364531f-7141-46be-bb99-e70b1fd9fd12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.district_ballot_page.field_ballot
+    - field.field.node.district_ballot_page.field_district
+    - node.type.district_ballot_page
+  module:
+    - user
+    - webform
+id: node.district_ballot_page.default
+targetEntityType: node
+bundle: district_ballot_page
+mode: default
+content:
+  field_ballot:
+    weight: 1
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_district: true
+  langcode: true

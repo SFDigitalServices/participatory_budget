@@ -1,0 +1,7 @@
+status: '1'
+pattern: 'District [node:field_district:entity:field_district_number] Ballot Page'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - node.type.district_ballot_page
