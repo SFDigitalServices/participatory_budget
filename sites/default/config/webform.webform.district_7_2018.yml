@@ -20,7 +20,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   form_submit_once: true
-  form_exception_message: 'Unable to display the ballot. If this persists, please email jesse.szwedko@sfgov.org.'
+  form_exception_message: 'Unable to display the ballot. If this persists, please email the district address at the bottom of the page.'
   form_open_message: 'Please check back to vote April 1st - 14th.'
   form_close_message: 'Voting currently closed. Please check back to vote April 1st - 14th.'
   form_previous_submissions: true
@@ -48,7 +48,7 @@ settings:
   submission_user_columns: {  }
   submission_login: false
   submission_login_message: ''
-  submission_exception_message: 'Unable to submit the ballot. If this persists, please email jesse.szwedko@sfgov.org.'
+  submission_exception_message: 'Unable to submit the ballot. If this persists, please email the district address at the bottom of the page.'
   submission_locked_message: 'Voting currently disabled.'
   autofill: false
   autofill_message: ''
