@@ -18,5 +18,8 @@ data_layer: dataLayer
 include_classes: false
 whitelist_classes: "google\nnonGooglePixels\nnonGoogleScripts\nnonGoogleIframes"
 blacklist_classes: "customScripts\ncustomPixels"
+include_environment: true
+environment_id: env-2
+environment_token: dSLJTfjrUdavQSnH9KlSGA
 _core:
   default_config_hash: UyNPbddlLO3s8kwBAYs5ubS74V4uBRmWxfrE9yEGeGM
