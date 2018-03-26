@@ -37,6 +37,7 @@ permissions:
   - 'administer entity_view_mode labels'
   - 'administer filter_format labels'
   - 'administer filters'
+  - 'administer google tag manager'
   - 'administer image styles'
   - 'administer image_style labels'
   - 'administer languages'
