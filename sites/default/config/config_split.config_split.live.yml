@@ -1,0 +1,15 @@
+uuid: 30cd7eab-901d-4091-ad75-005aad222fcb
+langcode: en
+status: false
+dependencies: {  }
+id: live
+label: live
+folder: sites/default/config_live
+module: {  }
+theme: {  }
+blacklist:
+  - google_tag.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

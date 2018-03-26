@@ -24,3 +24,11 @@ if (file_exists($local_settings)) {
   include $local_settings;
 }
 $settings['install_profile'] = 'minimal';
+
+// activate environment specific configuration splits
+// https://www.liip.ch/en/blog/advanced-drupal-8-cmi-workflows
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  $config["config_split.config_split.{$_ENV['PANTHEON_ENVIRONMENT']}"]['status'] = TRUE;
+} else {
+  $config['config_split.config_split.dev']['status'] = TRUE;
+}
