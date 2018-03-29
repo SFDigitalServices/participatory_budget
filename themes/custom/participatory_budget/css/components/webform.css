@@ -7,3 +7,9 @@
   content: " *";
   color: red;
 }
+
+.fieldset-wrapper .field-prefix .description {
+  font-style: italic;
+  color: #82B440;
+  font-size: large;
+}
