@@ -66,6 +66,7 @@ permissions:
   - 'administer webform'
   - 'administer webform element access'
   - 'administer webform submission'
+  - administer_mailsystem
   - 'bypass node access'
   - 'cancel account'
   - 'cancel users by role'
