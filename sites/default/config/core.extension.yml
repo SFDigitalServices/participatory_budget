@@ -35,12 +35,15 @@ module:
   language: 0
   link: 0
   locale: 0
+  mailsystem: 0
   menu_ui: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   recaptcha: 0
+  reroute_email: 0
+  sendgrid_integration: 0
   system: 0
   telephone: 0
   text: 0

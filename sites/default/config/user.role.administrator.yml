@@ -52,6 +52,8 @@ permissions:
   - 'administer pathauto'
   - 'administer permissions'
   - 'administer recaptcha'
+  - 'administer reroute email'
+  - 'administer sendgrid settings'
   - 'administer site configuration'
   - 'administer software updates'
   - 'administer themes'

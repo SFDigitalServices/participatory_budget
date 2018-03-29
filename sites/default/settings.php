@@ -32,3 +32,11 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
 } else {
   $config['config_split.config_split.dev']['status'] = TRUE;
 }
+
+// conditionally reroute email
+if (isset($_ENV['PANTHEON_ENVIRONMENT']) && $_ENV['PANTHEON_ENVIRONMENT'] == 'live') {
+  $config['reroute_email.settings']['enable'] = FALSE;
+  $config['reroute_email.settings']['address'] = ''; // just log
+} else {
+  $config['reroute_email.settings']['enable'] = TRUE;
+}

@@ -1,15 +1,16 @@
-uuid: 2fff27cd-3ef8-492f-b1f8-dcdcdc7453ef
+uuid: cf6c7c6c-4838-40f4-abd6-5615870f3c0c
 langcode: en
 status: true
 dependencies: {  }
-id: split_captcha_settings
-label: 'Split Captcha Settings'
+id: sensitive
+label: sensitive
 folder: ''
 module: {  }
 theme: {  }
-blacklist: {  }
-graylist:
+blacklist:
   - recaptcha.settings
+  - sendgrid_integration.settings
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
