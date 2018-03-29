@@ -148,4 +148,39 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    label: Email
+    handler_id: email
+    status: true
+    conditions:
+      enabled:
+        ':input[name="email"]':
+          filled: true
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      subject: 'Thank you for voting!'
+      body: "Thank you for voting!&nbsp; District 7 residents can vote until April 14th&nbsp; Results will be sent a few weeks after the voting closes.<br />\n&nbsp;<br />\nWe are constantly working to improve this process and engage more residents.&nbsp; We will follow-up with a short survey.&nbsp; Please take a few minutes to complete.&nbsp; Your participation and feedback is greatly appreciated.<br />\n&nbsp;<br />\nIf you have any questions feel free to contact Erica.Maybaum@sfgov.org\n"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
