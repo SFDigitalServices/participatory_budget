@@ -52,7 +52,6 @@ if (defined('PANTHEON_ENVIRONMENT')) {
     $settings['trusted_host_patterns'][] = "{$_ENV['PANTHEON_ENVIRONMENT']}-{$_ENV['PANTHEON_SITE_NAME']}.panth.io";
 
     # Replace value with custom domain(s) added in the site Dashboard
-    $settings['trusted_host_patterns'][] = '^.+.yoursite.com$';
-    $settings['trusted_host_patterns'][] = '^yoursite.com$';
+    $settings['trusted_host_patterns'][] = '^sfpbd.sfgov.org$';
   }
 }
