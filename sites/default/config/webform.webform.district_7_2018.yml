@@ -1,9 +1,9 @@
 uuid: 06880836-0fce-4498-a59f-a24a74a1ca5a
 langcode: en
-status: closed
+status: scheduled
 dependencies: {  }
-open: null
-close: null
+open: '2018-04-01T00:00:01'
+close: '2018-04-14T23:59:59'
 uid: 1
 template: false
 id: district_7_2018
