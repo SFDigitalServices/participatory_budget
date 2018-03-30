@@ -71,4 +71,5 @@ p.translation, main span.translation {
 
 #vote-links a {
   font-size: xx-large;
+  text-decoration: underline;
 }
