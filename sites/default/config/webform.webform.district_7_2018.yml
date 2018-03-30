@@ -21,8 +21,8 @@ settings:
   page_confirm_path: ''
   form_submit_once: true
   form_exception_message: 'Unable to display the ballot. If this persists, please email the district address at the bottom of the page.'
-  form_open_message: 'Please check back to vote April 1st - 14th.'
-  form_close_message: 'Voting currently closed. Please check back to vote April 1st - 14th.'
+  form_open_message: 'Voting not open yet. Please check back to vote April 1st - 14th.'
+  form_close_message: 'Voting has been closed.'
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''

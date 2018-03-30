@@ -119,5 +119,8 @@ function participatory_budget_preprocess_node_district_voting_page(&$variables) 
 
   if ($ballot = $node->get('field_ballot')->entity) {
     $variables['ballot_open'] = $ballot->isOpen();
+    if ($ballot->isOpening()) {
+      $variables['ballot_open_message'] = $ballot->getSetting('form_open_message');
+    }
   }
 }

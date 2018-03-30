@@ -26,6 +26,8 @@
         </li>
       </ul>
     </div>
+  {% elseif ballot_open_message %}
+    <h2 class="text-center">{{ ballot_open_message }}</h2>
   {% else %}
     <h2 class="text-center">Voting is closed</h2>
   {% endif %}
