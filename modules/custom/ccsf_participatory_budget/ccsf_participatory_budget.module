@@ -54,4 +54,40 @@ function ccsf_participatory_budget_webform_element_alter(array &$element, FormSt
   if (isset($element['#languages']) && !in_array(\Drupal::languageManager()->getCurrentLanguage()->getId(), $element['#languages'])) {
     $element['#access'] = false;
   }
+
+  // if element has max_combined_checkboxes validate that the nested checkboxes count doesn't exceed the given count
+  if (isset($element['#max_combined_checkboxes'])) {
+    $element['#element_validate'][] = 'ccsf_participatory_budget_combined_checkboxes_validate';
+  }
+}
+
+// validate any containers that have a #max_combined_checkboxes attribute
+function ccsf_participatory_budget_combined_checkboxes_validate(array &$element, FormStateInterface $form_state, array &$form) {
+  $max_options = $element['#max_combined_checkboxes'];
+
+  $count_checkboxes = function($carry, $v) use (&$count_checkboxes, $form_state) {
+    if (is_array($v) && isset($v['#type'])) {
+      if ($v['#type'] === 'checkboxes') {
+        return $carry + count($form_state->getValue($v['#webform_key']));
+      }
+
+      // could be a nested layout or section element, recurse
+      return array_reduce($v, $count_checkboxes, $carry);
+    }
+
+    return $carry;
+  };
+
+  $num_checked = array_reduce($element, $count_checkboxes, 0);
+
+  if ($max_options < $num_checked) {
+    $tArgs = array(
+      '%name' => empty($element['#title']) ? $element['#parents'][0] : $element['#title'],
+      '%max_options' => $max_options,
+    );
+    $form_state->setError(
+      $element,
+      t('Maximum of %max_options options allowed for %name', $tArgs)
+    );
+  }
 }
