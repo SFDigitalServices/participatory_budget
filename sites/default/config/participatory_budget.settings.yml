@@ -1,5 +1,14 @@
 logo:
   path: themes/custom/participatory_budget/img/logo.png
-  use_default: false
+  use_default: 0
 _core:
   default_config_hash: zy5DX1LgvrncAtLKU9X8t_Onj6_C3NOLWy6PJx3mcRE
+features:
+  node_user_picture: false
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+favicon:
+  use_default: 1
+  path: themes/custom/participatory_budget/favicon.ico
+  mimetype: image/vnd.microsoft.icon
