@@ -130,3 +130,16 @@ $settings['rebuild_access'] = TRUE;
  * directory.
  */
 $settings['skip_permissions_hardening'] = TRUE;
+
+// matches configuration in docker-compose.yml
+$databases['default']['default'] = array (
+  'database' => 'participatory_budget',
+  'username' => 'root',
+  'password' => 'password',
+  'prefix' => '',
+  'host' => 'maria_db',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = '6RxI2LoAnE1roPn049EkIXcU5OBEz64LrFnw0swAbESxb3qwhsI5ZbxejvGf4RgRCeBnKmXrzA';
