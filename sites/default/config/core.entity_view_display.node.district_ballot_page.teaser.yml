@@ -1,9 +1,11 @@
 uuid: 9ade98c5-a79b-42e4-b579-bbbaa3efb8f8
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.district_ballot_page.field_ballot
+    - field.field.node.district_ballot_page.field_district
     - node.type.district_ballot_page
   module:
     - user
@@ -16,4 +18,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_ballot: true
+  field_district: true
   langcode: true
