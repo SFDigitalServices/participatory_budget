@@ -1,0 +1,35 @@
+digraph diagram {
+	graph[overlap=false, splines=true]
+
+	"District" [shape=record, label="{\District|
+		Type: Entity\l\
+		District contact information and number\l\
+	}"]
+
+	"District Landing Page" [shape=record, label="{\District Landing Page|
+		Type: Content Type\l\
+		Home page for the district\l\
+	}"]
+
+	"District Voting Page" [shape=record, label="{District Voting Page|\
+		Type: Content Type\l\
+		District Voting Information\l\
+	}"]
+
+	"District Ballot Page" [shape=record, label="{District Ballot Page|\
+		Type: Content Type\l\
+		Ballot page for the district\l\
+	}"]
+
+	"District Ballot" [shape=record, label="{District Ballot|\
+		Type: Webform\l\
+		Webform encoding the district ballot\l\
+	}"]
+
+	"District Landing Page" -> "District" [label="entity reference"]
+	"District Voting Page" -> "District" [label="entity reference"]
+	"District Ballot Page" -> "District" [label="entity reference"]
+	"District Landing Page" -> "District Voting Page" [label="child menu link"]
+	"District Voting Page" -> "District Ballot Page" [label="district reference"]
+	"District Ballot Page" -> "District Ballot" [label="webform reference"]
+}
