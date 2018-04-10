@@ -52,6 +52,10 @@ To build and run the app with docker-compose, run `docker-compose up` then you c
 `http://localhost:8080`, as the local filesystem is mounted into the docker container you can edit the files as you are
 developing locally.
 
+For more details on both of these tools, Docker and docker-compose, see [Getting started with
+Docker](https://docs.docker.com/get-started/) and [Getting started with
+docker-compose](https://docs.docker.com/compose/gettingstarted/).
+
 #### Using drush and drupal commands
 
 You can execute `drush` and `drupal` commands from within the container via:
