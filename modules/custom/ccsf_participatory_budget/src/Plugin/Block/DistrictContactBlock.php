@@ -30,6 +30,7 @@ class DistrictContactBlock extends BlockBase {
     return array(
       '#theme' => 'ccsf_participatory_budget__district_contact',
       '#district' => $node->get('field_district')->entity,
+      '#can_update' => $node->get('field_district')->entity->access('update'),
     );
   }
 
