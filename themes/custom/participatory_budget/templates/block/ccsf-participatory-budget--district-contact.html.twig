@@ -9,6 +9,6 @@
   </ul>
 
   {% if can_update %}
-    <a href="{{ path('entity.district.canonical', { 'district': district.id() }) }}">Edit</a>
+    <a href="{{ path('entity.district.canonical', { 'district': district.id.value }) }}">Edit</a>
   {% endif %}
 </div>
