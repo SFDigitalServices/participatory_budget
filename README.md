@@ -121,3 +121,9 @@ Drupal for editors to be able to easily access it. You can view it via
 
 This application is hosted on [Pantheon](http://pantheon.io). The workflow for deploying is best described by their
 [workflow documentation](https://pantheon.io/docs/pantheon-workflow/).
+
+## Ballot processing
+
+Some districts have found it useful to have the district for each submission identified to ensure that voters are within
+the district the ballot is for. To aid with this, `scripts/annotate_results_with_district_number.py` can be used to add
+the additional information to a downloaded CSV of the results for a given ballot. See `-h` usage for help.
