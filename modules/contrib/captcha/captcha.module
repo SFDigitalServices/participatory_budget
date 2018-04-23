@@ -361,6 +361,9 @@ function _captcha_get_posted_captcha_info(array $element, FormStateInterface $fo
           [':csid' => $posted_captcha_sid]
         )->fetchField();
         if ($expected_captcha_token !== $posted_captcha_token) {
+          \Drupal::logger('CAPTCHA')->error(
+            'CAPTCHA session reuse attack detected (%csid).',
+            ['%csid' => var_export($csid, TRUE)]);
           drupal_set_message(t('CAPTCHA session reuse attack detected.'), 'error');
           // Invalidate the CAPTCHA session.
           $posted_captcha_sid = NULL;

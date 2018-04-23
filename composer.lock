@@ -1386,6 +1386,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "logging CAPTCHA session reuse attacks": "patches/drupal_captcha-1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
