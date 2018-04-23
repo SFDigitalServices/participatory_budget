@@ -66,6 +66,7 @@ class WebformHelpVideoForm extends FormBase {
     }
 
     $form['#title'] = $video['title'];
+
     // Content.
     if (is_array($video['content'])) {
       $form['content'] = $video['content'];
@@ -84,6 +85,16 @@ class WebformHelpVideoForm extends FormBase {
       ];
     }
 
+    // Related resources.
+    $form['resources'] = [
+      '#type' => 'details',
+      '#title' => $this->t('Additional resources'),
+      'links' => [
+        '#theme' => 'links',
+        '#links' => $this->helpManager->getVideoLinks($id),
+      ],
+    ];
+
     // Actions.
     if (isset($video['submit_label'])) {
       $form['actions'] = ['#type' => 'actions'];
@@ -93,6 +104,8 @@ class WebformHelpVideoForm extends FormBase {
         '#button_type' => 'primary',
       ];
     }
+
+    $form['#attached']['library'][] = 'webform/webform.help';
 
     return $form;
   }
