@@ -1,18 +1,21 @@
 We've had 2 reports that users encountered this error, but it's not possible to determine how many since it isn't
 currently logged.
 
-I'll attempt to contribute this back upstream as well.
+Can be removed when https://www.drupal.org/project/captcha/issues/2968549 is accepted.
 diff --git a/modules/contrib/captcha/captcha.module b/modules/contrib/captcha/captcha.module
-index fb940e9a8..1e2cae6a0 100644
+index fb940e9a8..e31d18d4f 100644
 --- a/modules/contrib/captcha/captcha.module
 +++ b/modules/contrib/captcha/captcha.module
-@@ -361,6 +361,9 @@ function _captcha_get_posted_captcha_info(array $element, FormStateInterface $fo
+@@ -361,6 +361,12 @@ function _captcha_get_posted_captcha_info(array $element, FormStateInterface $fo
            [':csid' => $posted_captcha_sid]
          )->fetchField();
          if ($expected_captcha_token !== $posted_captcha_token) {
-+          \Drupal::logger('CAPTCHA')->error(
-+            'CAPTCHA session reuse attack detected (%csid).',
-+            ['%csid' => var_export($csid, TRUE)]);
++         \Drupal::logger('CAPTCHA')->debug(
++           'CAPTCHA session reuse attack detected <br/>Posted CAPTCHA token: @posted_captcha_token <br/>Expected captcha token: @expected_captcha_token',
++          [
++            '@expected_captcha_token' => var_export($expected_captcha_token, TRUE),
++            '@posted_captcha_token' => var_export($posted_captcha_token, TRUE)
++          ]);
            drupal_set_message(t('CAPTCHA session reuse attack detected.'), 'error');
            // Invalidate the CAPTCHA session.
            $posted_captcha_sid = NULL;
