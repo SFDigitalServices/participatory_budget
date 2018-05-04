@@ -103,5 +103,10 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    ]
+    ],
+    "require-dev": {
+        "behat/behat": "^3.4",
+        "drupal/drupal-extension": "^3.4",
+        "behat/mink": "^1.7"
+    }
 }
