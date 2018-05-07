@@ -19,3 +19,8 @@ default:
     Drupal\DrupalExtension:
       blackbox: ~
       api_driver: 'drush'
+local:
+  extensions:
+    Drupal\DrupalExtension:
+      drush:
+        root: '../'

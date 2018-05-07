@@ -10,7 +10,7 @@ Feature: Content
 #   - Creating district voting page
 #   - Creating district ballot
 #
-# Use examples from # https://github.com/pantheon-systems/example-drops-8-composer/blob/master/tests/features/content.feature
+# Used examples from https://github.com/pantheon-systems/example-drops-8-composer/blob/master/tests/features/content.feature
 
   @api
   Scenario: Create users
@@ -27,4 +27,5 @@ Feature: Content
     | name      | status | mail             |
     | Test user |      1 | test@example.com |
     When I am logged in as "Test user"
-    Then I should see the link "Log out"
+    When I visit "/admin"
+    Then I should see the text "Administration"

@@ -116,7 +116,7 @@ jobs:
 
             - run:
                 name: run functional tests with Behat
-                command: ./tests/scripts/run-behat
+                command: ./tests/scripts/run-pantheon-behat
 
             - run:
                 name: post-test actions
