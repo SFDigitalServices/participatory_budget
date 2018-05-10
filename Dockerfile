@@ -1,4 +1,4 @@
-FROM php:7.1-apache
+FROM php:7.2-apache
 
 # Change document root to ./web to match new directory structure
 ENV APACHE_DOCUMENT_ROOT /var/www/html/web
@@ -9,7 +9,7 @@ RUN a2enmod rewrite
 
 # install the PHP extensions we need
 # install mysql-client to allow drush to be executed in the container
-RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev mysql-client \
+RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libpq-dev mysql-client \
   && rm -rf /var/lib/apt/lists/* \
   && docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
   && docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip

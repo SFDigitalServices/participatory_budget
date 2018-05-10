@@ -123,5 +123,10 @@
         "behat/behat": "^3.4",
         "drupal/drupal-extension": "^3.4",
         "behat/mink": "^1.7"
+    },
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
     }
 }
