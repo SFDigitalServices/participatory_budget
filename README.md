@@ -1,6 +1,10 @@
 [SF Participatory Budgeting Site](https://sfpbd.sfgov.org/)
 ===============
 
+[![CircleCI](https://circleci.com/gh/SFDigitalServices/participatory_budget.svg?style=shield)](https://circleci.com/gh/SFDigitalServices/participatory_budget)
+[![Dashboard participatory_budget](https://img.shields.io/badge/dashboard-participatory_budget-yellow.svg)](https://dashboard.pantheon.io/sites/3cca8d8e-d9a7-4a1e-a92c-181042d4fa9f#dev/code)
+[![Dev Site participatory_budget](https://img.shields.io/badge/site-participatory_budget-blue.svg)](http://dev-participatory_budget.pantheonsite.io/)
+
 Each year in San Francisco, some number of supervisorial districts participate in a [participatory
 budgeting](https://www.participatorybudgeting.org/) process, allowing community members to propose and vote on projects
 to fund in their district.
@@ -119,8 +123,8 @@ Drupal for editors to be able to easily access it. You can view it via
 
 ## Deploying
 
-This application is hosted on [Pantheon](http://pantheon.io). The workflow for deploying is best described by their
-[workflow documentation](https://pantheon.io/docs/pantheon-workflow/).
+This application is hosted on [Pantheon](http://pantheon.io). It uses CircleCI to bulid assets and deploy to Pantheon
+for testing. On the `master` branch, changes are pushed to the `dev` environment on successful build.
 
 ## Ballot processing
 
