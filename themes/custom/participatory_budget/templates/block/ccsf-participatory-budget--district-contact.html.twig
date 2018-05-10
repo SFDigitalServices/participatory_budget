@@ -7,4 +7,8 @@
     <li>{{ district.field_contact_phone.value }}</li>
     <li><a href="{{ district.field_external_district_page.uri }}">For more District {{ district.field_district_number.value }} information.</a></li>
   </ul>
+
+  {% if can_update %}
+    <a href="{{ path('entity.district.canonical', { 'district': district.id.value }) }}">Edit</a>
+  {% endif %}
 </div>

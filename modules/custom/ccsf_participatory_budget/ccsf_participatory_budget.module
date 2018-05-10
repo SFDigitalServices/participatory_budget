@@ -8,7 +8,8 @@ function ccsf_participatory_budget_theme($existing, $type, $theme, $path) {
   return array(
     'ccsf_participatory_budget__district_contact' => array(
       'variables' => array(
-        'district' => null
+        'district' => null,
+        'can_update' => null,
       ),
     ),
     'ccsf_participatory_budget_help' => array(
