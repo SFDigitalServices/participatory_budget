@@ -29,7 +29,6 @@ web/sites/default/default.services.yml
 web/sites/default/default.settings.php
 web/sites/default/settings.pantheon.php
 web/sites/development.services.yml
-web/sites/example.settings.local.php
 web/sites/example.sites.php
 web/update.php
 web/web.config
@@ -63,7 +62,7 @@ web/sites/default/files
 # Place local settings in settings.local.php
 web/sites/*/settings.local.php
 web/sites/*/services*.yml
-!web/sites/*/services.pantheon.*.yml 
+!web/sites/*/services.pantheon.*.yml
 
 # Ignore SimpleTest multi-site environment.
 web/sites/simpletest
