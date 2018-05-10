@@ -20,7 +20,6 @@ use Behat\Mink\Mink,
 
 use Selenium\Client as SeleniumClient;
 
-$browser = 'firefox';
 $url = 'http://example.com';
 
 $mink = new Mink(array(

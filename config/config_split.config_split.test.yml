@@ -1,0 +1,15 @@
+uuid: e53360ee-62d1-4dfd-b800-c41bb48ba635
+langcode: en
+status: false
+dependencies: {  }
+id: test
+label: test
+folder: ../config_test
+module: {  }
+theme: {  }
+blacklist:
+  - google_tag.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

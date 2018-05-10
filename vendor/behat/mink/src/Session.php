@@ -134,17 +134,12 @@ class Session
     }
 
     /**
-     * Visit specified URL and automatically start session if not already running.
+     * Visit specified URL.
      *
      * @param string $url url of the page
      */
     public function visit($url)
     {
-        // start session if needed
-        if (!$this->isStarted()) {
-            $this->start();
-        }
-
         $this->driver->visit($url);
     }
 

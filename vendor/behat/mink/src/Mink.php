@@ -100,7 +100,7 @@ class Mink
     }
 
     /**
-     * Returns registered session by it's name or default one.
+     * Returns registered session by it's name or active one and automatically starts it if required.
      *
      * @param string $name session name
      *
@@ -110,7 +110,14 @@ class Mink
      */
     public function getSession($name = null)
     {
-        return $this->locateSession($name);
+        $session = $this->locateSession($name);
+
+        // start session if needed
+        if (!$session->isStarted()) {
+            $session->start();
+        }
+
+        return $session;
     }
 
     /**

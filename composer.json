@@ -1,12 +1,13 @@
 {
-    "name": "drupal/drupal",
-    "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+    "name": "sfdigitalservices/participatory_budget",
+    "description": "Online service for the SF Participatory Budget program.",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "require": {
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
         "drush/drush": "^8.1",
+        "drupal/core": "^8.5",
         "drupal/console": "~1.0",
         "drupal/auto_entitylabel": "^2.0@beta",
         "drupal/token": "^1.0",
@@ -24,12 +25,13 @@
         "drupal/sendgrid_integration": "^1.1",
         "drupal/reroute_email": "^1.0",
         "drupal/contribute": "^5.0@beta",
-        "cweagans/composer-patches": "~1.0"
+        "cweagans/composer-patches": "~1.0",
+        "drupal-composer/drupal-scaffold": "^2.4"
     },
-    "replace": {
-        "drupal/core": "^8.5"
+    "conflict": {
+        "drupal/drupal": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "alpha",
     "prefer-stable": true,
     "config": {
         "preferred-install": "dist",
@@ -52,19 +54,32 @@
             "merge-extra": false
         },
         "installer-paths": {
-            "core": ["type:drupal-core"],
-            "modules/contrib/{$name}": ["type:drupal-module"],
-            "profiles/contrib/{$name}": ["type:drupal-profile"],
-            "themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"],
-            "modules/custom/{$name}": ["type:drupal-custom-module"],
-            "themes/custom/{$name}": ["type:drupal-custom-theme"]
+            "web/core": ["type:drupal-core"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
         },
-      "patches": {
-        "drupal/captcha": {
-          "logging CAPTCHA session reuse attacks": "patches/drupal_captcha-1.patch"
+        "patches": {
+            "drupal/captcha": {
+                "logging CAPTCHA session reuse attacks": "patches/drupal_captcha-1.patch"
+            }
+        },
+        "drupal-scaffold": {
+            "source": "https://raw.githubusercontent.com/pantheon-systems/drops-8-scaffolding/{version}/{path}",
+            "includes": [
+                "sites/default/default.services.pantheon.preproduction.yml",
+                "sites/default/settings.pantheon.php"
+            ],
+            "excludes": [
+                ".csslintrc",
+                ".editorconfig",
+                ".eslintignore",
+                ".eslintrc.json",
+                ".htaccess",
+                "web.config"
+            ]
         }
-      }
     },
     "autoload": {
         "psr-4": {

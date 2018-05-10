@@ -1,5 +1,0 @@
-administerusersbyrole.settings:
-  title: Administer Users by Role
-  description: Manage Administer Users by Role settings.
-  route_name: administerusersbyrole.settings
-  parent: user.admin_index

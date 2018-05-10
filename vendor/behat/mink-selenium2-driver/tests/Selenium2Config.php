@@ -16,7 +16,7 @@ class Selenium2Config extends AbstractConfig
      */
     public function createDriver()
     {
-        $browser = getenv('WEB_FIXTURES_BROWSER') ?: 'firefox';
+        $browser = $_SERVER['WEB_FIXTURES_BROWSER'];
         $seleniumHost = $_SERVER['DRIVER_URL'];
 
         return new Selenium2Driver($browser, null, $seleniumHost);
@@ -41,7 +41,7 @@ class Selenium2Config extends AbstractConfig
 
         if (
             'Behat\Mink\Tests\Driver\Js\WindowTest' === $testCase
-            && (0 === strpos($test, 'testWindowMaximize'))
+            && 'testWindowMaximize' === $test
             && 'true' === getenv('TRAVIS')
         ) {
             return 'Maximizing the window does not work when running the browser in Xvfb.';
